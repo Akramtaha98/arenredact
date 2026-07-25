@@ -1,0 +1,30 @@
+# End-to-end pipeline configuration (Section 4, Figure 1). Consumed by
+# scripts/run_adversarial_eval.py and scripts/run_reidentification_eval.py;
+# an ArEnRedactPipeline can also be constructed directly in code without
+# this file (see pipeline.py's docstring for the library usage pattern).
+
+pipeline:
+  checkpoint_path: "runs/lora_xlmr/checkpoint-best"   # null -> regex-only mode
+  model_version_hash: "xlmr-lora-r8-v1"
+
+corpus:
+  n_sentences: 8970          # Section 5.1
+  seed: 42
+  arabizi_rate: 0.30
+
+adversarial_eval:
+  operators: ["arz", "tat", "dia", "hgl", "cmb"]
+  n_bootstrap_resamples: 10000
+  confidence: 0.95
+  seed: 42
+
+reidentification_eval:
+  adversary: "lexical_overlap"   # "null" | "lexical_overlap"
+  background_corpus_path: "data/background/mena_entities.jsonl"
+
+mia_eval:
+  n_shadow_models: 128
+  target_fpr: 0.01
+
+audit_log:
+  private_key_path: null      # null -> generate ephemeral key at startup

@@ -1,0 +1,578 @@
+{
+  "n_cases": 25,
+  "n_positive_identifiers": 20,
+  "true_positives": 16,
+  "false_positives": 0,
+  "false_negatives": 4,
+  "precision": 1.0,
+  "recall": 0.8,
+  "f1": 0.888888888888889,
+  "per_type": {
+    "PHONE": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 0,
+      "gold": 9,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "EMAIL": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "gold": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "IBAN": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "gold": 4,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "NATIONAL_ID": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "gold": 4,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "per_item": [
+    {
+      "text": "They asked me to phone +966718281828 once the shipment clears customs.",
+      "gold": [
+        [
+          23,
+          36,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          23,
+          36,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          23,
+          36,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Could you try +971 45 904 5235 if the office line is busy?",
+      "gold": [
+        [
+          14,
+          30,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          14,
+          30,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          14,
+          30,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "His WhatsApp is +20-360-287-471, not the landline.",
+      "gold": [
+        [
+          16,
+          31,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          16,
+          31,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          16,
+          31,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "إذا احتجت مساعدة اتصل على +964352662497 بعد الظهر.",
+      "gold": [
+        [
+          26,
+          39,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          39,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          39,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Reception in Amman answers at +962757247093 during business hours.",
+      "gold": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Kuwait deliveries, coordinate via +965699959574 before noon.",
+      "gold": [
+        [
+          38,
+          51,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          38,
+          51,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          38,
+          51,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Bahrain support line: +973966967627, available Sunday to Thursday.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "He just said \"call me at 724076630\" without giving the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The internal extension is 4353, that's not a full external number.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "SA7182818284590452353602 is the account we used last quarter.",
+      "gold": [
+        [
+          0,
+          24,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          0,
+          24,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          0,
+          24,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Bahrain settlement account: BH87BMAG47135266249775.",
+      "gold": [
+        [
+          28,
+          50,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          50,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          50,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "حساب الفرع في العراق هو IQ72RAFB470936999595749.",
+      "gold": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "EG669676277240766303535475945 was flagged for review this morning.",
+      "gold": [
+        [
+          0,
+          29,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          0,
+          29,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          0,
+          29,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire instructions list sa7182818284590452353602 in lowercase — please recheck before sending.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "His civil registry number, 7138217852, needs to be updated on file.",
+      "gold": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ]
+    },
+    {
+      "text": "سجّل الموظف رقم هويته 5166427427 في الاستمارة الجديدة.",
+      "gold": [
+        [
+          22,
+          32,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": [
+        [
+          22,
+          32,
+          "NATIONAL_ID"
+        ]
+      ]
+    },
+    {
+      "text": "Invoice reference 4663919320 does not correspond to any person.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The warehouse barcode reads 0305992181 on the outer carton.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Reply-to address for the ticket is support+case7182@helpdesk-mena.io.",
+      "gold": [
+        [
+          35,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          35,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          35,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "شارك الملف مع reviewer.team@arenredact-project.dev قبل الاجتماع.",
+      "gold": [
+        [
+          14,
+          50,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          14,
+          50,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          14,
+          50,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "يا ريت تبعتلي IBAN بتاعك على الايميل، أو حتى ابعته على +20360287471.",
+      "gold": [
+        [
+          55,
+          67,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          55,
+          67,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          55,
+          67,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please confirm the civil ID 7413596629 matches what's on the Kuwait residency card, لو سمحت.",
+      "gold": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ]
+    },
+    {
+      "text": "Order quantity for this batch was 0435727182 units, not a document number.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Meeting moved to 09:45 on the fourteenth, same room as last time.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Jordan branch contact: 8182845904 (civil ID), call +962757247093, or email reviewer.team@arenredact-project.dev.",
+      "gold": [
+        [
+          23,
+          33,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          64,
+          "PHONE"
+        ],
+        [
+          75,
+          111,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          51,
+          64,
+          "PHONE"
+        ],
+        [
+          75,
+          111,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          51,
+          64,
+          "PHONE"
+        ],
+        [
+          75,
+          111,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        [
+          23,
+          33,
+          "NATIONAL_ID"
+        ]
+      ]
+    }
+  ]
+}

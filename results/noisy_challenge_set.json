@@ -1,0 +1,4080 @@
+{
+  "n_cases": 168,
+  "n_positive_identifiers": 155,
+  "n_countries": 7,
+  "true_positives": 155,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "per_type": {
+    "PHONE": {
+      "gold": 47,
+      "tp": 47,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "EMAIL": {
+      "gold": 32,
+      "tp": 32,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "IBAN": {
+      "gold": 31,
+      "tp": 31,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "NATIONAL_ID": {
+      "gold": 45,
+      "tp": 45,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "per_item": [
+    {
+      "text": "Call +966501234567 for details.",
+      "gold": [
+        [
+          5,
+          18,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          5,
+          18,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          5,
+          18,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "My email is ahmed.hassan@example.com for work.",
+      "gold": [
+        [
+          12,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer to SA7912345678901234567890 today.",
+      "gold": [
+        [
+          12,
+          36,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          36,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          36,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID: 1234567890 on file.",
+      "gold": [
+        [
+          13,
+          23,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          13,
+          23,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          13,
+          23,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Reach me at +966 50 123 4567 anytime.",
+      "gold": [
+        [
+          12,
+          28,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          28,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          28,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "My number is +971-50-987-6543 now.",
+      "gold": [
+        [
+          13,
+          29,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          13,
+          29,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          13,
+          29,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Call 00966501234567 instead of the plus form.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local number: 0501234567 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +966 (50) 123-4567 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Extension: +966501234567 x204 for the front desk.",
+      "gold": [
+        [
+          11,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          11,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          11,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please wire to sa7912345678901234567890 (lowercase prefix).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN SA79 1234 5678 9012 3456 7890 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Account AE070331234567890123456 is active.",
+      "gold": [
+        [
+          8,
+          31,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          31,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          31,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Reference number 123456789 is nine digits, not an ID.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Tracking code 12345678901 has eleven digits.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Order #1234567890 was shipped yesterday.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية ١٢٣٤٥٦٧٨٩٠ مسجل.",
+      "gold": [
+        [
+          11,
+          21,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          11,
+          21,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          11,
+          21,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send to sara+invoices@sub.company-name.co for billing.",
+      "gold": [
+        [
+          8,
+          41,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          41,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          41,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Contact user_2024@mail-provider.info please.",
+      "gold": [
+        [
+          8,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          36,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The invoice total is 500.00 SAR before tax.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The meeting is scheduled for 2024-05-12 at 3pm.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Discount applied: 1234567890 was NOT a code, just today's visitor count.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The building has 4567890123 square feet of office space.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Flight AA1234 departs at 14:30 from gate B12.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "والله يا صديقي، اتصل فيني على +966512345678 لو سمحت.",
+      "gold": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          30,
+          43,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the invoice to billing@company-sa.com, بليز اليوم.",
+      "gold": [
+        [
+          20,
+          42,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          20,
+          42,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          20,
+          42,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "أبو خالد قال إن رقمه القومي 9876543210 ضاع منه.",
+      "gold": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Can you confirm the IBAN BH67BMAG00001299123456 before Friday?",
+      "gold": [
+        [
+          25,
+          47,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          25,
+          47,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          25,
+          47,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +966141592653 regarding your Saudi Arabia account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Saudi Arabia office at +966 14 159 2653.",
+      "gold": [
+        [
+          41,
+          57,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          41,
+          57,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          41,
+          57,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +966-589-793-238 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +966589793238 x12 for Saudi Arabia support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Saudi Arabia number: 141592653 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +966 (58) 979-3238 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to SA5028841971693993751058 for the Saudi Arabia branch.",
+      "gold": [
+        [
+          24,
+          48,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          48,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          48,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account SA5923078164062862089986 before month end.",
+      "gold": [
+        [
+          27,
+          51,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          51,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          51,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to sa5028841971693993751058 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN SA59 2307 8164 062862089986 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Saudi Arabia): 3421170679 recorded on file.",
+      "gold": [
+        [
+          35,
+          45,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          35,
+          45,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          35,
+          45,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Saudi Arabia National ID number: 8214808651 verified today.",
+      "gold": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Saudi Arabia هو 3282306647.",
+      "gold": [
+        [
+          38,
+          48,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          38,
+          48,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          38,
+          48,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٠٩٣٨٤٤٦٠٩٥.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Saudi Arabia shipment tracking value was 5058223114 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Saudi Arabia paperwork to user.sa1@example.sa today.",
+      "gold": [
+        [
+          35,
+          54,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          35,
+          54,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          35,
+          54,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.sa2@example.sa on all Saudi Arabia correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Saudi Arabia matters, call +966141592653 or email user.sa1@example.sa.",
+      "gold": [
+        [
+          31,
+          44,
+          "PHONE"
+        ],
+        [
+          54,
+          73,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          31,
+          44,
+          "PHONE"
+        ],
+        [
+          54,
+          73,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          31,
+          44,
+          "PHONE"
+        ],
+        [
+          54,
+          73,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 8214808651 is linked to account SA5028841971693993751058 in our Saudi Arabia records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          75,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          75,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          75,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Saudi Arabia customer file: phone +966589793238, email contact.sa2@example.sa, National ID number 3421170679, account SA5923078164062862089986.",
+      "gold": [
+        [
+          34,
+          47,
+          "PHONE"
+        ],
+        [
+          55,
+          77,
+          "EMAIL"
+        ],
+        [
+          98,
+          108,
+          "NATIONAL_ID"
+        ],
+        [
+          118,
+          142,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          34,
+          47,
+          "PHONE"
+        ],
+        [
+          55,
+          77,
+          "EMAIL"
+        ],
+        [
+          98,
+          108,
+          "NATIONAL_ID"
+        ],
+        [
+          118,
+          142,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          34,
+          47,
+          "PHONE"
+        ],
+        [
+          55,
+          77,
+          "EMAIL"
+        ],
+        [
+          98,
+          108,
+          "NATIONAL_ID"
+        ],
+        [
+          118,
+          142,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +971535897932 regarding your UAE account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the UAE office at +971 53 589 7932.",
+      "gold": [
+        [
+          32,
+          48,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          32,
+          48,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          32,
+          48,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +971-384-626-433 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +971384626433 x12 for UAE support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local UAE number: 535897932 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +971 (38) 462-6433 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to AE971693993751058209749 for the UAE branch.",
+      "gold": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account AE164062862089986280348 before month end.",
+      "gold": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to ae971693993751058209749 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN AE16 4062 8620 89986280348 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (UAE): 6798214808 recorded on file.",
+      "gold": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "UAE National ID number: 6513282306 verified today.",
+      "gold": [
+        [
+          24,
+          34,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          34,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          34,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في UAE هو 6470938446.",
+      "gold": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٠٩٥٥٠٥٨٢٢٣.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The UAE shipment tracking value was 1141592653 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the UAE paperwork to user.ae1@example.ae today.",
+      "gold": [
+        [
+          26,
+          45,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          45,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          45,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.ae2@example.ae on all UAE correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For UAE matters, call +971535897932 or email user.ae1@example.ae.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ],
+        [
+          45,
+          64,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ],
+        [
+          45,
+          64,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ],
+        [
+          45,
+          64,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 6513282306 is linked to account AE971693993751058209749 in our UAE records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "UAE customer file: phone +971384626433, email contact.ae2@example.ae, National ID number 6798214808, account AE164062862089986280348.",
+      "gold": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          46,
+          68,
+          "EMAIL"
+        ],
+        [
+          89,
+          99,
+          "NATIONAL_ID"
+        ],
+        [
+          109,
+          132,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          46,
+          68,
+          "EMAIL"
+        ],
+        [
+          89,
+          99,
+          "NATIONAL_ID"
+        ],
+        [
+          109,
+          132,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          46,
+          68,
+          "EMAIL"
+        ],
+        [
+          89,
+          99,
+          "NATIONAL_ID"
+        ],
+        [
+          109,
+          132,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +20323846264 regarding your Egypt account.",
+      "gold": [
+        [
+          12,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Egypt office at +20 32 384 6264.",
+      "gold": [
+        [
+          34,
+          49,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          34,
+          49,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          34,
+          49,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +20-338-327-950 (available after 9am).",
+      "gold": [
+        [
+          8,
+          23,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          23,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          23,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +20338327950 x12 for Egypt support.",
+      "gold": [
+        [
+          22,
+          34,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          34,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          34,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Egypt number: 323846264 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +20 (33) 832-7950 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to EG937510582097494459230781640 for the Egypt branch.",
+      "gold": [
+        [
+          24,
+          53,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          53,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          53,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account EG620899862803482534211706798 before month end.",
+      "gold": [
+        [
+          27,
+          56,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          56,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          56,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to eg937510582097494459230781640 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN EG62 0899 8628 03482534211706798 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Egypt): 8086513282 recorded on file.",
+      "gold": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Egypt National ID number: 3066470938 verified today.",
+      "gold": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          36,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Egypt هو 4460955058.",
+      "gold": [
+        [
+          31,
+          41,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          31,
+          41,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          31,
+          41,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٢٢٣١١٤١٥٩٢.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Egypt shipment tracking value was 6535897932 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Egypt paperwork to user.eg1@example.eg today.",
+      "gold": [
+        [
+          28,
+          47,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          47,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          47,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.eg2@example.eg on all Egypt correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Egypt matters, call +20323846264 or email user.eg1@example.eg.",
+      "gold": [
+        [
+          24,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 3066470938 is linked to account EG937510582097494459230781640 in our Egypt records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          80,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          80,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          80,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Egypt customer file: phone +20338327950, email contact.eg2@example.eg, National ID number 8086513282, account EG620899862803482534211706798.",
+      "gold": [
+        [
+          27,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          139,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          139,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          139,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +964643383279 regarding your Iraq account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Iraq office at +964 64 338 3279.",
+      "gold": [
+        [
+          33,
+          49,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          33,
+          49,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          33,
+          49,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +964-502-884-197 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +964502884197 x12 for Iraq support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Iraq number: 643383279 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +964 (50) 288-4197 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to IQ82RAFB628620899862803 for the Iraq branch.",
+      "gold": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          47,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account IQ62RAFB214808651328230 before month end.",
+      "gold": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          50,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to iq82rafb628620899862803 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN IQ62 RAFB 2148 08651328230 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Iraq): 2823066470 recorded on file.",
+      "gold": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Iraq National ID number: 9384460955 verified today.",
+      "gold": [
+        [
+          25,
+          35,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          25,
+          35,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          25,
+          35,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Iraq هو 0582231141.",
+      "gold": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٥٩٢٦٥٣٥٨٩٧.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Iraq shipment tracking value was 9323846264 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Iraq paperwork to user.iq1@example.iq today.",
+      "gold": [
+        [
+          27,
+          46,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          46,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          46,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.iq2@example.iq on all Iraq correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Iraq matters, call +964643383279 or email user.iq1@example.iq.",
+      "gold": [
+        [
+          23,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          23,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          23,
+          36,
+          "PHONE"
+        ],
+        [
+          46,
+          65,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 9384460955 is linked to account IQ82RAFB628620899862803 in our Iraq records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          74,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Iraq customer file: phone +964502884197, email contact.iq2@example.iq, National ID number 2823066470, account IQ62RAFB214808651328230.",
+      "gold": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          133,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          133,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          47,
+          69,
+          "EMAIL"
+        ],
+        [
+          90,
+          100,
+          "NATIONAL_ID"
+        ],
+        [
+          110,
+          133,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +962795028841 regarding your Jordan account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Jordan office at +962 79 502 8841.",
+      "gold": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +962-971-693-993 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +962971693993 x12 for Jordan support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Jordan number: 795028841 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +962 (97) 169-3993 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to JO44CBJO9986280348253421170679 for the Jordan branch.",
+      "gold": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account JO25CBJO5132823066470938446095 before month end.",
+      "gold": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to jo44cbjo9986280348253421170679 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN JO25 CBJO 5132 823066470938446095 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Jordan): 4709384460 recorded on file.",
+      "gold": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Jordan National ID number: 9550582231 verified today.",
+      "gold": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Jordan هو 1415926535.",
+      "gold": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٨٩٧٩٣٢٣٨٤٦.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Jordan shipment tracking value was 2643383279 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Jordan paperwork to user.jo1@example.jo today.",
+      "gold": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.jo2@example.jo on all Jordan correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Jordan matters, call +962795028841 or email user.jo1@example.jo.",
+      "gold": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 9550582231 is linked to account JO44CBJO9986280348253421170679 in our Jordan records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Jordan customer file: phone +962971693993, email contact.jo2@example.jo, National ID number 4709384460, account JO25CBJO5132823066470938446095.",
+      "gold": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +965419716939 regarding your Kuwait account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Kuwait office at +965 41 971 6939.",
+      "gold": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          35,
+          51,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +965-937-510-582 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +965937510582 x12 for Kuwait support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Kuwait number: 419716939 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +965 (93) 751-0582 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to KW78CBKU3482534211706798214808 for the Kuwait branch.",
+      "gold": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          54,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account KW70CBKU0664709384460955058223 before month end.",
+      "gold": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          57,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to kw78cbku3482534211706798214808 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN KW70 CBKU 0664 709384460955058223 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Kuwait): 4609550582 recorded on file.",
+      "gold": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          39,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Kuwait National ID number: 2311415926 verified today.",
+      "gold": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          37,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Kuwait هو 5358979323.",
+      "gold": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          32,
+          42,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٨٤٦٢٦٤٣٣٨٣.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Kuwait shipment tracking value was 2795028841 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Kuwait paperwork to user.kw1@example.kw today.",
+      "gold": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          48,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.kw2@example.kw on all Kuwait correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Kuwait matters, call +965419716939 or email user.kw1@example.kw.",
+      "gold": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          25,
+          38,
+          "PHONE"
+        ],
+        [
+          48,
+          67,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 2311415926 is linked to account KW78CBKU3482534211706798214808 in our Kuwait records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          81,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Kuwait customer file: phone +965937510582, email contact.kw2@example.kw, National ID number 4609550582, account KW70CBKU0664709384460955058223.",
+      "gold": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          41,
+          "PHONE"
+        ],
+        [
+          49,
+          71,
+          "EMAIL"
+        ],
+        [
+          92,
+          102,
+          "NATIONAL_ID"
+        ],
+        [
+          112,
+          142,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Please call +973399375105 regarding your Bahrain account.",
+      "gold": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          12,
+          25,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "You can reach the Bahrain office at +973 39 937 5105.",
+      "gold": [
+        [
+          36,
+          52,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          36,
+          52,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          36,
+          52,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Mobile: +973-820-974-944 (available after 9am).",
+      "gold": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          8,
+          24,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Front desk extension: +973820974944 x12 for Bahrain support.",
+      "gold": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "predicted": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "correct": [
+        [
+          22,
+          35,
+          "PHONE"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Local Bahrain number: 399375105 without the country code.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Dial +973 (82) 097-4944 with parentheses.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Transfer the deposit to BH28BMAG21170679821480 for the Bahrain branch.",
+      "gold": [
+        [
+          24,
+          46,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          24,
+          46,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          24,
+          46,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Confirm receipt at account BH14BMAG38446095505822 before month end.",
+      "gold": [
+        [
+          27,
+          49,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          27,
+          49,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          27,
+          49,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Wire to bh28bmag21170679821480 (lowercase prefix, expected miss).",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "IBAN BH14 BMAG 3844 6095505822 with spaces.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number (Bahrain): 5822311415 recorded on file.",
+      "gold": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          30,
+          40,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Bahrain National ID number: 9265358979 verified today.",
+      "gold": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          28,
+          38,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية في Bahrain هو 3238462643.",
+      "gold": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          33,
+          43,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "رقم الهوية الوطنية بالأرقام العربية: ٣٨٣٢٧٩٥٠٢٨.",
+      "gold": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "predicted": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "correct": [
+        [
+          37,
+          47,
+          "NATIONAL_ID"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "The Bahrain shipment tracking value was 8419716939 at last scan.",
+      "gold": [],
+      "predicted": [],
+      "correct": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Send the Bahrain paperwork to user.bh1@example.bh today.",
+      "gold": [
+        [
+          30,
+          49,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          30,
+          49,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          30,
+          49,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "CC contact.bh2@example.bh on all Bahrain correspondence.",
+      "gold": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          3,
+          25,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "For Bahrain matters, call +973399375105 or email user.bh1@example.bh.",
+      "gold": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          49,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "predicted": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          49,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "correct": [
+        [
+          26,
+          39,
+          "PHONE"
+        ],
+        [
+          49,
+          68,
+          "EMAIL"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "National ID number 9265358979 is linked to account BH28BMAG21170679821480 in our Bahrain records.",
+      "gold": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          73,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          73,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          19,
+          29,
+          "NATIONAL_ID"
+        ],
+        [
+          51,
+          73,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "text": "Bahrain customer file: phone +973820974944, email contact.bh2@example.bh, National ID number 5822311415, account BH14BMAG38446095505822.",
+      "gold": [
+        [
+          29,
+          42,
+          "PHONE"
+        ],
+        [
+          50,
+          72,
+          "EMAIL"
+        ],
+        [
+          93,
+          103,
+          "NATIONAL_ID"
+        ],
+        [
+          113,
+          135,
+          "IBAN"
+        ]
+      ],
+      "predicted": [
+        [
+          29,
+          42,
+          "PHONE"
+        ],
+        [
+          50,
+          72,
+          "EMAIL"
+        ],
+        [
+          93,
+          103,
+          "NATIONAL_ID"
+        ],
+        [
+          113,
+          135,
+          "IBAN"
+        ]
+      ],
+      "correct": [
+        [
+          29,
+          42,
+          "PHONE"
+        ],
+        [
+          50,
+          72,
+          "EMAIL"
+        ],
+        [
+          93,
+          103,
+          "NATIONAL_ID"
+        ],
+        [
+          113,
+          135,
+          "IBAN"
+        ]
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    }
+  ]
+}

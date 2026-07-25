@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arenredact"
+version = "0.1.0"
+description = "Adversarially hardened PII redaction for Arabic-English code-mixed network traffic"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Alaa Q. Raheema" }]
+keywords = ["nlp", "privacy", "pii-redaction", "adversarial-robustness", "arabic-nlp", "code-switching"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "regex>=2023.10.3",
+    "pydantic>=2.5",
+    "pyyaml>=6.0",
+    "cryptography>=42.0",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.2",
+    "transformers>=4.38",
+    "peft>=0.9",
+    "datasets>=2.17",
+    "opacus>=1.4",
+    "scikit-learn>=1.4",
+    "numpy>=1.26",
+]
+arabic = [
+    "camel-tools>=1.5",
+    "arabic-reshaper>=3.0",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+    "mypy>=1.9",
+]
+
+[project.urls]
+Repository = "https://github.com/<author-org>/arenredact"
+Paper = "https://doi.org/10.xxxx/placeholder"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

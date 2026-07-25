@@ -1,0 +1,36 @@
+# LoRA fine-tuning configuration for Stage 2 (Neural NER), Section 4.2 / 5.4.
+# Mirrors arenredact.neural_ner.LoraNERConfig — kept as a separate YAML so
+# training runs can be launched/reproduced without editing source code.
+
+base_model: xlm-roberta-base
+
+lora:
+  r: 8                        # rank
+  alpha: 16                   # scaling factor
+  dropout: 0.05
+  target_modules: ["query", "value"]   # W_q, W_v attention projections only
+  bias: "none"
+  task_type: "TOKEN_CLS"
+
+training:
+  # Two-stage curriculum (Section 4.2): warm up on clean synthetic data,
+  # then continue on the adversarially augmented mixture.
+  stage1_epochs: 3
+  stage2_epochs: 5
+  batch_size: 16
+  learning_rate: 3.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  max_seq_length: 256
+  seed: 42
+
+data:
+  train_path: "data/synthetic/train.jsonl"
+  stage2_adversarial_path: "data/synthetic/train_adversarial.jsonl"
+  val_path: "data/synthetic/val.jsonl"
+  test_path: "data/synthetic/test.jsonl"
+
+output:
+  checkpoint_dir: "runs/lora_xlmr"
+  save_best_only: true
+  metric_for_best: "eval_f1"

@@ -1,0 +1,23 @@
+# Core (no GPU required) — preprocessing, pattern engine, span fusion, attacks, corpus generation
+regex>=2023.10.3
+pydantic>=2.5
+pyyaml>=6.0
+cryptography>=42.0
+tqdm>=4.66
+
+# ML stack — required for neural_ner.py, train_lora.py, and the MIA evaluation harness
+torch>=2.2
+transformers>=4.38
+peft>=0.9
+datasets>=2.17
+opacus>=1.4
+scikit-learn>=1.4
+numpy>=1.26
+
+# Arabic NLP utilities — required for the diacritization (DIA) attack operator
+camel-tools>=1.5
+arabic-reshaper>=3.0
+
+# Testing
+pytest>=8.0
+pytest-cov>=4.1
