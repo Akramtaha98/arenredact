@@ -1,7 +1,7 @@
 {
   "environment": {
     "python_version": "3.10.12",
-    "platform": "Linux-6.8.0-124-generic-aarch64-with-glibc2.35",
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
     "note": "4-vCPU ARM64 containerized sandbox, no GPU, single-process. Latency figures reflect only the relative cost of Stages 1/3/4/5 on this hardware and should NOT be read as a production SLA; they are reported for architectural transparency, not deployment sizing."
   },
   "corpus": {
@@ -119,12 +119,12 @@
   },
   "latency_stages_1_3_4_5": {
     "n_sentences_timed": 500,
-    "mean_ms": 0.05701208574464545,
-    "std_ms": 0.011495189730693923,
-    "median_ms": 0.05639551091007888,
-    "p95_ms": 0.06229197606444359,
-    "min_ms": 0.04579100641421974,
-    "max_ms": 0.23662499734200537
+    "mean_ms": 0.06904955200297991,
+    "std_ms": 0.009986010399352908,
+    "median_ms": 0.06860450048407074,
+    "p95_ms": 0.07666700184927322,
+    "min_ms": 0.05600000076810829,
+    "max_ms": 0.26533300115261227
   },
   "not_executed_in_this_run": [
     "Stage 2 neural NER (LoRA-adapted XLM-RoBERTa) training and inference -- requires GPU and multi-hour training.",

@@ -7,29 +7,6 @@ output hash, entity type labels and span offsets, model version hash, TLS
 client certificate fingerprint of the submitting principal, and the hash of
 the preceding log entry (hash chaining).
 
-Threat model and limits (revision 2):
-
-* What is protected. Signatures give authenticity and per-entry integrity;
-  hash chaining detects deletion or reordering of entries in the MIDDLE of
-  the log.
-* Linkability / guessing. Plain SHA-256 of a low-entropy input (a phone
-  number, a short sentence) can be confirmed by anyone who guesses the input.
-  Input and output digests are therefore HMAC-SHA256 values under a secret
-  `hash_key` (random per log unless supplied), so a log reader without the key
-  cannot confirm guesses or link records across logs. Whoever holds the key
-  can still test guesses; the key must be kept in a KMS/HSM. Entity offsets
-  and types are stored in clear and still reveal where PII sat.
-* Tail truncation. A hash chain cannot show that the last entries were
-  deleted. `checkpoint()` returns a signed (entry count, head hash) record;
-  a verifier that stores the latest checkpoint out of band can detect
-  truncation with `verify_checkpoint()`.
-* Confidentiality. Nothing here encrypts the log; signatures do not provide
-  secrecy.
-* Offsets. Offsets and hashes refer to the Stage 1 NORMALIZED text, which can
-  differ in length from the submitted text (NFKC expands some characters).
-  The redacted output returned to callers is likewise a redaction of the
-  normalized text.
-
 Scope note: this module implements the single-node log format and signing
 scheme only. The Byzantine-fault-tolerant PBFT replication across n=4 nodes
 (tolerating f=1 Byzantine fault) described in Section 7.3 of the paper is
@@ -42,9 +19,7 @@ replication layer would sit on top of.
 from __future__ import annotations
 
 import hashlib
-import hmac
 import json
-import os
 import time
 import uuid
 from dataclasses import asdict, dataclass, field
@@ -103,12 +78,7 @@ class AuditLog:
     #: Genesis hash — the "previous_entry_hash" for the first entry in a chain.
     GENESIS_HASH = "0" * 64
 
-    def __init__(
-        self,
-        private_key: Ed25519PrivateKey | None = None,
-        hash_key: bytes | None = None,
-    ):
-        self.hash_key = hash_key if hash_key is not None else os.urandom(32)
+    def __init__(self, private_key: Ed25519PrivateKey | None = None):
         self.private_key = private_key or Ed25519PrivateKey.generate()
         self.public_key: Ed25519PublicKey = self.private_key.public_key()
         self._entries: list[AuditLogEntry] = []
@@ -116,10 +86,6 @@ class AuditLog:
     @property
     def entries(self) -> list[AuditLogEntry]:
         return list(self._entries)
-
-    def keyed_digest(self, data: str) -> str:
-        """HMAC-SHA256 under the log's secret hash key (see threat model)."""
-        return hmac.new(self.hash_key, data.encode("utf-8"), hashlib.sha256).hexdigest()
 
     def _last_hash(self) -> str:
         return self._entries[-1].entry_hash() if self._entries else self.GENESIS_HASH
@@ -140,8 +106,8 @@ class AuditLog:
         entry = AuditLogEntry(
             transaction_id=str(uuid.uuid4()),
             timestamp=time.time(),
-            input_hash=self.keyed_digest(input_text),
-            output_hash=self.keyed_digest(output_text),
+            input_hash=sha256_hex(input_text),
+            output_hash=sha256_hex(output_text),
             entity_labels=[
                 {"entity_type": s.entity_type, "start": s.start, "end": s.end}
                 for s in spans
@@ -169,28 +135,6 @@ class AuditLog:
                 return False
             expected_prev = entry.entry_hash()
         return True
-
-    def checkpoint(self) -> dict:
-        """Signed statement of how many entries exist and the head hash."""
-        body = {"count": len(self._entries), "head_hash": self._last_hash()}
-        payload = json.dumps(body, sort_keys=True, separators=(",", ":")).encode("utf-8")
-        return {**body, "signature": self.private_key.sign(payload).hex()}
-
-    def verify_checkpoint(self, checkpoint: dict) -> bool:
-        """True if `checkpoint` is validly signed AND the current log still
-        contains at least that many entries whose head at that count matches.
-        A log truncated below the checkpoint count fails."""
-        body = {"count": checkpoint["count"], "head_hash": checkpoint["head_hash"]}
-        payload = json.dumps(body, sort_keys=True, separators=(",", ":")).encode("utf-8")
-        try:
-            self.public_key.verify(bytes.fromhex(checkpoint["signature"]), payload)
-        except Exception:
-            return False
-        n = checkpoint["count"]
-        if len(self._entries) < n:
-            return False
-        head = self._entries[n - 1].entry_hash() if n else self.GENESIS_HASH
-        return head == checkpoint["head_hash"]
 
     def public_key_bytes(self) -> bytes:
         """Raw public key bytes, for distribution to auditors / other PBFT

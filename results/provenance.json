@@ -1,0 +1,54 @@
+{
+ "python": "3.10.12",
+ "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+ "packages": {
+  "regex": "2026.9.29",
+  "pydantic": "2.14.0",
+  "PyYAML": "6.0.3",
+  "cryptography": "50.0.1",
+  "tqdm": "4.70.1",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "scipy": "1.15.3",
+  "phonenumbers": "9.0.40",
+  "matplotlib": "3.10.9",
+  "presidio-analyzer": "2.2.364",
+  "spacy": "3.8.16",
+  "pytest": "9.1.1"
+ },
+ "datasets_sha256": {
+  "scripts/noisy_challenge_set.py": "d22410dc0a2710254962387bcfdea4322d31a50b478f58673fa3129f62410473",
+  "scripts/noisy_challenge_set_holdout.py": "fc3d527cc35d433f7264c343682ff2b720f5b0a10076643e44ab9370b3f654b2",
+  "scripts/validity_realistic_set.py": "d8cd86fa6a6b77e18b711bc36d4c48f26618d4fec3f37ebe96d4d9465141c3ac",
+  "scripts/stratified_holdout.py": "7081f12f651ce4582fd477ed2f8b88485875424e6e6501292b7d40617f9976db",
+  "scripts/stratified_holdout_s4.py": "a66cb2fd1886a1ae6b4064ebee6681e5b0b9200d5c377a5ea4625771965e8b27",
+  "data/independent/wikipedia_ar.jsonl": "cc171f3678f857f53403894f602137c4f0f660c29e1206940e3eda8e2f3107a8",
+  "data/independent/wikipedia_en.jsonl": "fd9712affce58fac1ebbd6585fa5a9bb8d6a8e14d5546ef92c22d0acc991967a",
+  "annotation/sample_for_annotation.csv": "abe7c8577294d256842b72ec3c862dbea7ae39d0691c7912db824147a7901a86"
+ },
+ "current_code_sha256": "5359202a2ba521d66ef95b3d8c2377777affeaf6ae926347b3f23dd427b3833d",
+ "current_eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8",
+ "recorded_revisions": {
+  "R1 (first-round code), attack audit re-run with the final scripts": {
+   "results_file": "results/attack_audit_r1.json",
+   "code_sha256": "07ad85ac67556f5acf6a34576d12aae8341ce5717670e2f036adc47e2d5120da",
+   "eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8"
+  },
+  "R2 (frozen before S3 was scored)": {
+   "results_file": "results/frozen/revision2_clean_firstrun.json",
+   "code_sha256": "91b9bf0cb8a4ef3f32dd57585bfc8fb053154976570283f9da2ed40b6961859d",
+   "eval_sha256": null
+  },
+  "R3 (final, = current): clean evaluation": {
+   "results_file": "results/revision2_clean.json",
+   "code_sha256": "5359202a2ba521d66ef95b3d8c2377777affeaf6ae926347b3f23dd427b3833d",
+   "eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8"
+  },
+  "R3 (final, = current): attack audit": {
+   "results_file": "results/attack_audit_r2.json",
+   "code_sha256": "5359202a2ba521d66ef95b3d8c2377777affeaf6ae926347b3f23dd427b3833d",
+   "eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8"
+  }
+ },
+ "note": "eval_sha256 hashes every script in scripts/ (scorer, attack procedure, Presidio configuration, datasets). The R2 frozen first-run file predates it and stores only the package hash. R1 source is archived in results/frozen/r1_src; R2 is identified by hash only (its sole difference to R3 is the phone-parentheses fix; see CHANGELOG)."
+}

@@ -1,0 +1,18 @@
+# Versions used to produce every number in the manuscript (Python 3.10.12, Linux aarch64).
+# Core
+regex==2026.9.29
+pydantic==2.13.5
+PyYAML==6.0.3
+cryptography==50.0.1
+tqdm==4.70.1
+# Evaluation
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+phonenumbers==9.0.40
+matplotlib==3.10.9
+# Baseline (Presidio on a blank spaCy pipeline)
+presidio-analyzer==2.2.364
+spacy==3.8.16
+# Testing
+pytest==9.1.1

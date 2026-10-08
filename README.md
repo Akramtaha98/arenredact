@@ -1,10 +1,37 @@
 # ArEnRedact
 
-**Adversarially hardened, threat-model-driven PII redaction for Arabic–English code-mixed network traffic.**
+**A threat-driven evaluation framework and deterministic baseline for Arabic-English PII redaction.**
 
-Reference implementation accompanying the paper *"ArEnRedact: A Threat-Driven Methodology and Reproducible Evaluation Framework for Arabic–English PII Redaction."*
+Reference implementation and reproduction package for the manuscript submitted to the *Journal of Information Security and Applications* (version 1.0.0).
 
-> **Status note (read before running).** The paper distinguishes two classes of result — see Section 5.5. **Measured** (Tables 4–6): the deterministic tier (Stages 1, 3, 4, 5 — no neural NER) was executed end-to-end against the synthetic corpus in this repository (seed = 42) and every number in those tables is a real, reproducible output of that run; see `results/deterministic_tier_baseline.json` for the raw output. It was also run against an independent, hand-authored noisy challenge set (`scripts/noisy_challenge_set.py`) covering formatting variation the corpus generator does not produce — P=R=F1=0.944 (17 TP, 1 FP, 1 FN across 28 cases), with two concrete pattern-engine limitations surfaced and documented rather than silently patched; see `results/noisy_challenge_set.json`. **Specified, not executed**: the neural NER tier (Stage 2), the LoRA-vs-full-fine-tuning membership-inference comparison, the DP-SGD frontier, the component ablation, and the AraBERT/GPT-4o/Llama-3.1 comparison baselines require GPU training (and, for two baselines, external API access) not available in the environment used to prepare the paper. The code for all of it is here and unit-tested (see `evaluation/membership_inference.py`), but no neural-tier numbers are reported as findings anywhere in the manuscript. Running `scripts/train_lora.py` and the `scripts/run_*_eval.py` scripts against a GPU is how those numbers get produced.
+> **Scope and status (read first).** Every number in the manuscript comes from the **deterministic tier** (Stage 1 normalisation, Stage 3 regex engine, Stage 4 fusion, Stage 5 audit log). Stage 2 (LoRA XLM-RoBERTa), DP-SGD, LiRA membership inference and re-identification with a strong adversary are specified and unit-tested but **not executed** (no GPU) and are future work. The evaluation sets are synthetic or author-constructed; **no independent human annotation has been performed**. `annotation/` contains the protocol, blind sample and agreement tooling for that step.
+
+## Reproduce
+
+```
+pip install -r requirements-lock.txt && pip install -e .
+bash scripts/reproduce_all.sh        # or: make all
+```
+
+| Output in the paper | Command | Result file |
+|---|---|---|
+| Corpus statistics, latency | `scripts/reproduce_deterministic_tier_baseline.py` | `results/deterministic_tier_baseline.json` |
+| Clean detection, Presidio controls, ablation, strata, Wikipedia false positives | `scripts/run_clean_eval.py` | `results/revision2_clean.json` |
+| Frozen S3 score at revision R2 (scored once) | `scripts/run_clean_eval.py` at R2 | `results/frozen/revision2_clean_firstrun.json` |
+| Fixed and adaptive attacks, component attribution | `scripts/run_attack_audit.py --revision r2` | `results/attack_audit_r2.json` |
+| First-round detector under the same attacks | `PYTHONPATH=results/frozen/r1_src:scripts python scripts/run_attack_audit.py --revision r1` | `results/attack_audit_r1.json` |
+| Complexity (length scaling) | `scripts/redos_scaling.py` | `results/redos_scaling.json` |
+| Hashes, versions | `scripts/make_provenance.py` | `results/provenance.json` |
+
+Each result file records `code_sha256`, the SHA-256 of the detector source that produced it. Dataset hashes are in `results/provenance.json`. Python 3.10, versions in `requirements-lock.txt`. The unit tests (`pytest`, 122 tests) run in under a second.
+
+## Revision history of the detector (why three hashes)
+
+- **R1**: first-round detector (source archived in `results/frozen/r1_src`).
+- **R2**: Stage 1 extended (invisible, confusable and mark stripping), phone/IBAN/e-mail/ID rules rewritten. Frozen, then the stratified holdout S3 was scored once on it.
+- **R3** (final): one post hoc fix to phone numbers with a parenthesised group. S3 scores at R2 and R3 are both reported.
+
+See `CHANGELOG.md`.
 
 ## What this is
 
@@ -17,7 +44,7 @@ raw text -> [1] Unicode normalization -> [2] LoRA NER  \
 
 | Stage | Module | What it does |
 |---|---|---|
-| 1 | `arenredact.preprocessing` | NFC normalization, bidi control-character stripping, Arabic–Indic digit folding, Tatweel capping |
+| 1 | `arenredact.preprocessing` | NFKC normalization, bidi control-character stripping, Arabic–Indic digit folding, Tatweel capping |
 | 2 | `arenredact.neural_ner` | LoRA-adapted XLM-RoBERTa token classifier |
 | 3 | `arenredact.pattern_engine` | Deterministic regex detectors for MENA phone numbers, IBANs, emails, national IDs |
 | 4 | `arenredact.span_fusion` | Union-fusion + kunya/nisbah/laqab quasi-identifier expansion (Algorithm 1 in the paper) |
@@ -25,9 +52,9 @@ raw text -> [1] Unicode normalization -> [2] LoRA NER  \
 
 Plus:
 
-- `arenredact.attacks` — the five adversarial perturbation operators (ARZ, TAT, DIA, HGL, CMB) used for the security evaluation
-- `arenredact.data` — synthetic code-mixed PII corpus generator
-- `arenredact.evaluation` — ASR, PRIR, and MIA (LiRA) evaluation harnesses
+- `arenredact.attacks`: the five adversarial perturbation operators (ARZ, TAT, DIA, HGL, CMB) used for the security evaluation
+- `arenredact.data`: synthetic code-mixed PII corpus generator
+- `arenredact.evaluation`: ASR, PRIR, and MIA (LiRA) evaluation harnesses
 
 ## Repository layout
 
@@ -53,14 +80,14 @@ arenredact/
 ## Installation
 
 ```bash
-git clone https://github.com/<author-org>/arenredact.git
+git clone https://github.com/Akramtaha98/arenredact.git
 cd arenredact
 pip install -e ".[dev]"
 ```
 
 Python 3.10+. Core deterministic modules (`preprocessing`, `pattern_engine`, `span_fusion`, `attacks`, `data.corpus_generator`) have **no GPU dependency** and run anywhere. `neural_ner.py` and the MIA harness require `torch`, `transformers`, and `peft`; `train_lora.py` expects a CUDA GPU for realistic training times.
 
-## Quickstart — deterministic pipeline only (no GPU required)
+## Quickstart - deterministic pipeline only (no GPU required)
 
 ```python
 from arenredact.preprocessing import normalize
@@ -102,7 +129,7 @@ python scripts/run_mia_eval.py --target-checkpoint runs/lora_xlmr/checkpoint-bes
     --n-shadow-models 128 --fpr-threshold 0.01
 ```
 
-Each script writes a JSON results file. The deterministic-tier scripts reproduce Tables 4–6 exactly (see `results/deterministic_tier_baseline.json` for the committed reference output); the neural-tier scripts (`run_mia_eval.py`, and `run_*_eval.py` once pointed at a trained checkpoint) produce the numbers the paper explicitly does not yet report — running them and reporting the output is the paper's stated next step (Section 8.5).
+Each script writes a JSON results file. The deterministic-tier scripts reproduce Tables 4–6 exactly (see `results/deterministic_tier_baseline.json` for the committed reference output); the neural-tier scripts (`run_mia_eval.py`, and `run_*_eval.py` once pointed at a trained checkpoint) produce the numbers the paper explicitly does not yet report, running them and reporting the output is the paper's stated next step (Section 8.5).
 
 ## Testing
 
@@ -112,16 +139,18 @@ pytest tests/ -v
 
 The test suite covers the deterministic components only (preprocessing, pattern engine, span fusion, attack operators) since these require no trained model or GPU and are fully reproducible in CI. See `.github/workflows/tests.yml`.
 
-To reproduce the independent noisy challenge set result (P=R=F1=0.944):
+To reproduce the extended 168-sentence challenge set result (P=R=F1=1.000, post-fix):
 
 ```bash
 python scripts/noisy_challenge_set.py
 ```
 
+The frozen holdout (`scripts/noisy_challenge_set_holdout.py`) was run exactly once and its recorded result (`results/noisy_challenge_set_holdout.json`, P=1.000, R=0.800, F1=0.889) is reported as-is; re-running it is possible but re-scoring it against the post-holdout keyword-list fix would defeat the purpose of freezing it (see the module docstring for the full rationale).
+
 ## Security notes
 
-- The pattern engine is written against Python's built-in `re` module for portability. The paper specifies Google's RE2 for its linear-time (ReDoS-proof) guarantee; swap in the `google-re2` bindings (`pip install google-re2`) for production deployment — `pattern_engine.py` isolates all regex compilation behind a single `_compile()` call so the swap is a one-line change (see the comment in that file).
-- `audit_log.py` implements the hash-chaining and Ed25519 signing logic described in Section 7.3. The Byzantine-fault-tolerant replication (PBFT, n=4, f=1) across multiple nodes is **not** implemented here — this repository provides the single-node log format; multi-node consensus is future work per the paper's Section 8.3 (Limitations).
+- The pattern engine is written against Python's built-in `re` module for portability. The paper specifies Google's RE2 for its linear-time (ReDoS-proof) guarantee; swap in the `google-re2` bindings (`pip install google-re2`) for production deployment; `pattern_engine.py` isolates all regex compilation behind a single `_compile()` call so the swap is a one-line change (see the comment in that file).
+- `audit_log.py` implements the hash-chaining and Ed25519 signing logic described in Section 7.3. The Byzantine-fault-tolerant replication (PBFT, n=4, f=1) across multiple nodes is **not** implemented here; this repository provides the single-node log format; multi-node consensus is future work per the paper's Section 8.3 (Limitations).
 - No real PII is included anywhere in this repository. `corpus_generator.py` produces synthetic entities only.
 
 ## Citation
@@ -138,4 +167,4 @@ python scripts/noisy_challenge_set.py
 
 ## License
 
-MIT — see `LICENSE`.
+MIT - see `LICENSE`.

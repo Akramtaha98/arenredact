@@ -49,3 +49,15 @@ def test_pipeline_multiple_redactions_chain_audit_log():
     pipeline.redact("e@f.com")
     assert len(pipeline.audit_log.entries) == 3
     assert pipeline.audit_log.verify_chain() is True
+
+
+def test_redaction_under_length_changing_normalization():
+    """NFKC expands U+FDF2 to four letters and fullwidth digits fold to ASCII;
+    redaction must still remove the identifier from the output and offsets
+    refer to the normalized text."""
+    text = "\ufdf2 \uff0b\uff19\uff16\uff16\uff15\uff10\uff11\uff12\uff13\uff14\uff15\uff16\uff17"
+    r = ArEnRedactPipeline().redact(text)
+    assert len(r.normalized_text) != len(text)
+    assert "[PHONE]" in r.redacted_text and not any(c.isdigit() for c in r.redacted_text)
+    sp = r.spans[0]
+    assert r.normalized_text[sp.start:sp.end].startswith("+966")

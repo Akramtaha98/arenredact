@@ -77,3 +77,31 @@ def test_no_raw_text_stored_only_hashes():
     entry = log.append(secret_text, "[REDACTED]", [], "v1", "sha256:abc")
     serialized = str(entry.canonical_bytes())
     assert secret_text not in serialized
+
+
+def test_digests_are_keyed_not_plain_sha256():
+    log = AuditLog(hash_key=b"k" * 32)
+    e = log.append("0501234567", "[PHONE]", [], "v1", "sha256:abc")
+    assert e.input_hash != sha256_hex("0501234567")  # guessable plain hash is not used
+    other = AuditLog(hash_key=b"z" * 32)
+    e2 = other.append("0501234567", "[PHONE]", [], "v1", "sha256:abc")
+    assert e.input_hash != e2.input_hash  # not linkable across keys
+
+
+def test_checkpoint_detects_tail_truncation():
+    log = AuditLog()
+    for i in range(5):
+        log.append(f"in{i}", f"out{i}", [], "v1", "sha256:abc")
+    cp = log.checkpoint()
+    assert log.verify_checkpoint(cp)
+    log._entries = log._entries[:3]  # attacker deletes the tail
+    assert log.verify_chain()  # chain alone cannot see it
+    assert not log.verify_checkpoint(cp)  # the signed checkpoint does
+
+
+def test_checkpoint_forgery_rejected():
+    log = AuditLog()
+    log.append("a", "b", [], "v1", "sha256:abc")
+    cp = log.checkpoint()
+    cp["count"] = 0
+    assert not log.verify_checkpoint(cp)

@@ -155,3 +155,32 @@ def test_national_id_matched_with_arabic_possessive_suffix_context():
     spans = engine.detect("سجّل الموظف رقم هويته 5166427427 في الاستمارة الجديدة.")
     ids = [s for s in spans if s.entity_type == "NATIONAL_ID"]
     assert len(ids) == 1
+
+
+import pytest
+from arenredact.pipeline import ArEnRedactPipeline as _P
+
+
+@pytest.mark.parametrize("text,label", [
+    ("Call 00966501234567 now", "[PHONE]"),
+    ("Dial +966 (50) 123-4567 today", "[PHONE]"),
+    ("Call +973 (37) 237 956 ASAP", "[PHONE]"),          # 8-digit Bahrain number, parenthesised area group
+    ("Reach +966.50.123.4567 please", "[PHONE]"),
+    ("wire to sa7912345678901234567890 ok", "[IBAN]"),
+    ("IBAN SA79 1234 5678 9012 3456 7890 with spaces.", "[IBAN]"),
+    ("IBAN BH14 BMAG 3844 6095505822 with spaces.", "[IBAN]"),
+    ("1234567890 (civil ID) was matched", "[NATIONAL_ID]"),
+    ("\u0631\u0642\u0645 \u0627\u0644\u0647\u064f\u0648\u0650\u064a\u0651\u0629 1234567890", "[NATIONAL_ID]"),  # decorated keyword
+    ("a.b@example.com", "[EMAIL]"),
+])
+def test_revision2_formats_detected(text, label):
+    assert label in _P().redact(text, record_audit=False).redacted_text
+
+
+@pytest.mark.parametrize("text", [
+    "Order 1234567890 shipped", "Reference 123456789 is nine digits", "Invoice total 500.00 SAR",
+    "SA1234 is not an IBAN", "IBAN SA79 1234 5678 9012 3456 78 too short", "2024-05-12 at 3pm",
+])
+def test_revision2_negatives_untouched(text):
+    r = _P().redact(text, record_audit=False)
+    assert r.redacted_text == r.normalized_text

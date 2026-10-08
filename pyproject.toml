@@ -4,12 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arenredact"
-version = "0.1.0"
+version = "1.0.1"
 description = "Adversarially hardened PII redaction for Arabic-English code-mixed network traffic"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Alaa Q. Raheema" }]
+authors = [
+    { name = "Alaa Q. Raheema" },
+    { name = "Hiba A. Tarish" },
+    { name = "Aymen D. Salman" },
+    { name = "Amjad J. Humaidi" },
+]
 keywords = ["nlp", "privacy", "pii-redaction", "adversarial-robustness", "arabic-nlp", "code-switching"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -42,7 +47,14 @@ arabic = [
     "camel-tools>=1.5",
     "arabic-reshaper>=3.0",
 ]
+baselines = [
+    "presidio-analyzer>=2.2",
+    "spacy>=3.7",
+    "scipy>=1.11",
+    "phonenumbers>=8.13",
+]
 dev = [
+    "phonenumbers>=8.13",
     "pytest>=8.0",
     "pytest-cov>=4.1",
     "ruff>=0.3",
@@ -50,8 +62,7 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/<author-org>/arenredact"
-Paper = "https://doi.org/10.xxxx/placeholder"
+Repository = "https://github.com/Akramtaha98/arenredact"
 
 [tool.setuptools.packages.find]
 where = ["src"]
