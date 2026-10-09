@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ArEnRedact: A Threat-Driven Evaluation Framework and Deterministic Baseline for Arabic-English PII Redaction"
+version: 1.1.0
+date-released: 2026-10-10
+license: MIT
+doi: 10.5281/zenodo.23250024  # archives release 1.0.1 (same detector source hash as 1.1.0); add the 1.1.0 DOI after release
+repository-code: "https://github.com/Akramtaha98/arenredact"
+keywords: [pii-redaction, arabic-nlp, adversarial-robustness, unicode-normalization, privacy, evaluation]
+authors:
+  - family-names: Raheema
+    given-names: "Alaa Q."
+    orcid: "https://orcid.org/0000-0002-6399-2671"
+  - family-names: Tarish
+    given-names: "Hiba A."
+  - family-names: Salman
+    given-names: "Aymen D."
+  - family-names: Humaidi
+    given-names: "Amjad J."

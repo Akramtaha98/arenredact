@@ -1,0 +1,1115 @@
+{
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+    "seed": 42,
+    "presidio_version": "2.2.364"
+  },
+  "systems": [
+    "ours_full",
+    "ours_no_stage1",
+    "presidio"
+  ],
+  "clean_detection": {
+    "synthetic_test_897": {
+      "ours_full": {
+        "tp": 730,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_type": {
+          "PHONE": {
+            "gold": 175,
+            "tp": 175,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 175,
+            "tp": 175,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 180,
+            "tp": 180,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 200,
+            "tp": 200,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "ours_no_stage1": {
+        "tp": 730,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_type": {
+          "PHONE": {
+            "gold": 175,
+            "tp": 175,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 175,
+            "tp": 175,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 180,
+            "tp": 180,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 200,
+            "tp": 200,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "presidio": {
+        "tp": 146,
+        "fp": 182,
+        "fn": 584,
+        "precision": 0.4451219512195122,
+        "recall": 0.2,
+        "f1": 0.27599243856332706,
+        "per_type": {
+          "PHONE": {
+            "gold": 175,
+            "tp": 27,
+            "fp": 182,
+            "fn": 148,
+            "recall": 0.15428571428571428
+          },
+          "EMAIL": {
+            "gold": 175,
+            "tp": 118,
+            "fp": 0,
+            "fn": 57,
+            "recall": 0.6742857142857143
+          },
+          "IBAN": {
+            "gold": 180,
+            "tp": 1,
+            "fp": 0,
+            "fn": 179,
+            "recall": 0.005555555555555556
+          },
+          "NATIONAL_ID": {
+            "gold": 200,
+            "tp": 0,
+            "fp": 0,
+            "fn": 200,
+            "recall": 0.0
+          }
+        }
+      },
+      "n_cases": 897,
+      "n_gold": 730
+    },
+    "extended_challenge_168": {
+      "ours_full": {
+        "tp": 155,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_type": {
+          "PHONE": {
+            "gold": 47,
+            "tp": 47,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 32,
+            "tp": 32,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 31,
+            "tp": 31,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 45,
+            "tp": 45,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "ours_no_stage1": {
+        "tp": 147,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9483870967741935,
+        "f1": 0.9735099337748345,
+        "per_type": {
+          "PHONE": {
+            "gold": 47,
+            "tp": 47,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 32,
+            "tp": 32,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 31,
+            "tp": 31,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 45,
+            "tp": 37,
+            "fp": 0,
+            "fn": 8,
+            "recall": 0.8222222222222222
+          }
+        }
+      },
+      "presidio": {
+        "tp": 48,
+        "fp": 65,
+        "fn": 107,
+        "precision": 0.4247787610619469,
+        "recall": 0.3096774193548387,
+        "f1": 0.35820895522388063,
+        "per_type": {
+          "PHONE": {
+            "gold": 47,
+            "tp": 14,
+            "fp": 64,
+            "fn": 33,
+            "recall": 0.2978723404255319
+          },
+          "EMAIL": {
+            "gold": 32,
+            "tp": 32,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 31,
+            "tp": 2,
+            "fp": 1,
+            "fn": 29,
+            "recall": 0.06451612903225806
+          },
+          "NATIONAL_ID": {
+            "gold": 45,
+            "tp": 0,
+            "fp": 0,
+            "fn": 45,
+            "recall": 0.0
+          }
+        }
+      },
+      "n_cases": 168,
+      "n_gold": 155
+    },
+    "frozen_holdout_25": {
+      "ours_full": {
+        "tp": 19,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "per_type": {
+          "PHONE": {
+            "gold": 9,
+            "tp": 9,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 3,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 4,
+            "tp": 3,
+            "fp": 0,
+            "fn": 1,
+            "recall": 0.75
+          }
+        }
+      },
+      "ours_no_stage1": {
+        "tp": 19,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "per_type": {
+          "PHONE": {
+            "gold": 9,
+            "tp": 9,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 3,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 4,
+            "tp": 3,
+            "fp": 0,
+            "fn": 1,
+            "recall": 0.75
+          }
+        }
+      },
+      "presidio": {
+        "tp": 3,
+        "fp": 7,
+        "fn": 17,
+        "precision": 0.3,
+        "recall": 0.15,
+        "f1": 0.2,
+        "per_type": {
+          "PHONE": {
+            "gold": 9,
+            "tp": 0,
+            "fp": 7,
+            "fn": 9,
+            "recall": 0.0
+          },
+          "EMAIL": {
+            "gold": 3,
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 4,
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "recall": 0.0
+          },
+          "NATIONAL_ID": {
+            "gold": 4,
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "recall": 0.0
+          }
+        }
+      },
+      "n_cases": 25,
+      "n_gold": 20
+    },
+    "validity_realistic_112": {
+      "ours_full": {
+        "tp": 112,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_type": {
+          "PHONE": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "ours_no_stage1": {
+        "tp": 112,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "per_type": {
+          "PHONE": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "NATIONAL_ID": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          }
+        }
+      },
+      "presidio": {
+        "tp": 83,
+        "fp": 20,
+        "fn": 29,
+        "precision": 0.8058252427184466,
+        "recall": 0.7410714285714286,
+        "f1": 0.772093023255814,
+        "per_type": {
+          "PHONE": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 20,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "EMAIL": {
+            "gold": 28,
+            "tp": 28,
+            "fp": 0,
+            "fn": 0,
+            "recall": 1.0
+          },
+          "IBAN": {
+            "gold": 28,
+            "tp": 27,
+            "fp": 0,
+            "fn": 1,
+            "recall": 0.9642857142857143
+          },
+          "NATIONAL_ID": {
+            "gold": 28,
+            "tp": 0,
+            "fp": 0,
+            "fn": 28,
+            "recall": 0.0
+          }
+        }
+      },
+      "n_cases": 112,
+      "n_gold": 112
+    }
+  },
+  "attack_audit_validity_realistic": [
+    {
+      "operator": "ARZ",
+      "n_in_scope": 112,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 83,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "TAT",
+      "n_in_scope": 112,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 83,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "DIA",
+      "n_in_scope": 112,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 83,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "HGL (paper default, 20% of digits)",
+      "n_in_scope": 112,
+      "n_changed": 84,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 84,
+          "changed_adv_tp": 84,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            0.0,
+            0.043733265332143306
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.03503503060494206
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 28,
+          "changed_clean_tp": 84,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.75,
+          "asr_over_changed": 1.0,
+          "changed_missed": 84,
+          "changed_asr_wilson95": [
+            0.9562667346678565,
+            0.9999999999999998
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 56,
+          "changed_clean_tp": 55,
+          "changed_adv_tp": 28,
+          "asr_over_all_clean_tp": 0.3253012048192771,
+          "asr_over_changed": 0.4909090909090909,
+          "changed_missed": 27,
+          "changed_asr_wilson95": [
+            0.3637656048710159,
+            0.6192396159251554
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "HGL (worst case, 100% of digits)",
+      "n_in_scope": 112,
+      "n_changed": 112,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 112,
+          "changed_adv_tp": 112,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            0.0,
+            0.03316252537948371
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.02639306042365297
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 0,
+          "changed_clean_tp": 112,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 1.0,
+          "asr_over_changed": 1.0,
+          "changed_missed": 112,
+          "changed_asr_wilson95": [
+            0.9668374746205163,
+            1.0
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 56,
+          "changed_clean_tp": 83,
+          "changed_adv_tp": 56,
+          "asr_over_all_clean_tp": 0.3253012048192771,
+          "asr_over_changed": 0.3253012048192771,
+          "changed_missed": 27,
+          "changed_asr_wilson95": [
+            0.23419186209445625,
+            0.43186680103473535
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "CMB (stochastic composition)",
+      "n_in_scope": 112,
+      "n_changed": 26,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 0,
+      "person_spans_changed": 0,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 112,
+          "adv_tp_all": 112,
+          "changed_clean_tp": 26,
+          "changed_adv_tp": 26,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            0.0,
+            0.12873304380462175
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.10883035576078481
+        },
+        "ours_no_stage1": {
+          "clean_tp": 112,
+          "adv_tp_all": 86,
+          "changed_clean_tp": 26,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.23214285714285715,
+          "asr_over_changed": 1.0,
+          "changed_missed": 26,
+          "changed_asr_wilson95": [
+            0.8712669561953783,
+            1.0000000000000002
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 83,
+          "adv_tp_all": 76,
+          "changed_clean_tp": 17,
+          "changed_adv_tp": 10,
+          "asr_over_all_clean_tp": 0.08433734939759036,
+          "asr_over_changed": 0.4117647058823529,
+          "changed_missed": 7,
+          "changed_asr_wilson95": [
+            0.21610786039131383,
+            0.6399492561448445
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    }
+  ],
+  "attack_audit_synthetic_test": [
+    {
+      "operator": "ARZ",
+      "n_in_scope": 730,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 238,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 146,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "TAT",
+      "n_in_scope": 730,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 430,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 146,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "DIA",
+      "n_in_scope": 730,
+      "n_changed": 0,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 430,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 146,
+          "changed_clean_tp": 0,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": null,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            null,
+            null
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "HGL (paper default, 20% of digits)",
+      "n_in_scope": 730,
+      "n_changed": 714,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 48,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 714,
+          "changed_adv_tp": 714,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            -4.313599831242158e-19,
+            0.005351598458490006
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.004186913797822656
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 16,
+          "changed_clean_tp": 714,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.9780821917808219,
+          "asr_over_changed": 1.0,
+          "changed_missed": 714,
+          "changed_asr_wilson95": [
+            0.99464840154151,
+            1.0
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 145,
+          "changed_clean_tp": 132,
+          "changed_adv_tp": 131,
+          "asr_over_all_clean_tp": 0.00684931506849315,
+          "asr_over_changed": 0.007575757575757576,
+          "changed_missed": 1,
+          "changed_asr_wilson95": [
+            0.0013385269033438952,
+            0.041664500151696676
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "HGL (worst case, 100% of digits)",
+      "n_in_scope": 730,
+      "n_changed": 730,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 293,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 730,
+          "changed_adv_tp": 730,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            0.0,
+            0.005234917181037434
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.004095333994347805
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 0,
+          "changed_clean_tp": 730,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 1.0,
+          "asr_over_changed": 1.0,
+          "changed_missed": 730,
+          "changed_asr_wilson95": [
+            0.9947650828189626,
+            1.0000000000000002
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 145,
+          "changed_clean_tp": 146,
+          "changed_adv_tp": 145,
+          "asr_over_all_clean_tp": 0.00684931506849315,
+          "asr_over_changed": 0.00684931506849315,
+          "changed_missed": 1,
+          "changed_asr_wilson95": [
+            0.001210066099070965,
+            0.037775102238693715
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    },
+    {
+      "operator": "CMB (stochastic composition)",
+      "n_in_scope": 730,
+      "n_changed": 176,
+      "length_changed_sentences": 0,
+      "person_spans_in_test": 722,
+      "person_spans_changed": 229,
+      "systems": {
+        "ours_full": {
+          "clean_tp": 730,
+          "adv_tp_all": 730,
+          "changed_clean_tp": 176,
+          "changed_adv_tp": 176,
+          "asr_over_all_clean_tp": 0.0,
+          "asr_over_changed": 0.0,
+          "changed_missed": 0,
+          "changed_asr_wilson95": [
+            1.6976680132512056e-18,
+            0.021361019919751596
+          ],
+          "changed_asr_exact_upper95_if_zero": 0.016877163787066496
+        },
+        "ours_no_stage1": {
+          "clean_tp": 730,
+          "adv_tp_all": 554,
+          "changed_clean_tp": 176,
+          "changed_adv_tp": 0,
+          "asr_over_all_clean_tp": 0.2410958904109589,
+          "asr_over_changed": 1.0,
+          "changed_missed": 176,
+          "changed_asr_wilson95": [
+            0.9786389800802483,
+            1.0
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        },
+        "presidio": {
+          "clean_tp": 146,
+          "adv_tp_all": 145,
+          "changed_clean_tp": 30,
+          "changed_adv_tp": 29,
+          "asr_over_all_clean_tp": 0.00684931506849315,
+          "asr_over_changed": 0.03333333333333333,
+          "changed_missed": 1,
+          "changed_asr_wilson95": [
+            0.005908437994857381,
+            0.16670751396958874
+          ],
+          "changed_asr_exact_upper95_if_zero": null
+        }
+      }
+    }
+  ]
+}

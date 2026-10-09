@@ -1,0 +1,34 @@
+{
+ "reviewers": {
+  "Leakage_Review_Sheet_completed.xlsx": {
+   "Q2_leak_vs_scorer_partial_k6": {
+    "n": 120,
+    "agreement": 1.0,
+    "agreement_wilson95": [
+     0.9689797289440706,
+     1.0000000000000002
+    ],
+    "kappa": 1.0,
+    "human_leak_scorer_leak": 60,
+    "scorer_false_alarm": 0,
+    "scorer_miss": 0,
+    "human_no_scorer_no": 60,
+    "disagreements": []
+   },
+   "Q1_complete_vs_scorer_full": {
+    "n": 120,
+    "agreement": 1.0,
+    "agreement_wilson95": [
+     0.9689797289440706,
+     1.0000000000000002
+    ],
+    "kappa": 1.0,
+    "human_leak_scorer_leak": 57,
+    "scorer_false_alarm": 0,
+    "scorer_miss": 0,
+    "human_no_scorer_no": 63,
+    "disagreements": []
+   }
+  }
+ }
+}

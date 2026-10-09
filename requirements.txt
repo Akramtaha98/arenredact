@@ -1,0 +1,31 @@
+# Core (no GPU required) — preprocessing, pattern engine, span fusion, attacks, corpus generation
+regex>=2023.10.3
+pydantic>=2.5
+pyyaml>=6.0
+cryptography>=42.0
+tqdm>=4.66
+
+# ML stack — required for neural_ner.py, train_lora.py, and the MIA evaluation harness
+torch>=2.2
+transformers>=4.38
+peft>=0.9
+datasets>=2.17
+opacus>=1.4
+scikit-learn>=1.4
+numpy>=1.26
+
+# Optional Arabic NLP utilities. NOT used by the shipped DIA operator, which
+# inserts random tashkeel without morphological analysis; install only if you
+# replace it with a CAMeL Tools-based diacritizer.
+camel-tools>=1.5
+arabic-reshaper>=3.0
+
+# Baseline comparison (scripts/evaluation_suite.py) and validity-realistic set
+presidio-analyzer>=2.2
+spacy>=3.7
+scipy>=1.11
+phonenumbers>=8.13
+
+# Testing
+pytest>=8.0
+pytest-cov>=4.1
