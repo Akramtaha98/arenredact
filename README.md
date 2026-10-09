@@ -4,12 +4,12 @@
 
 **A threat-driven evaluation framework and deterministic baseline for Arabic–English PII redaction**
 
-![version](https://img.shields.io/badge/version-1.1.0-blue)
+![version](https://img.shields.io/badge/version-1.1.1-blue)
 ![python](https://img.shields.io/badge/python-3.10%2B-3776AB)
 ![tests](https://img.shields.io/badge/tests-122%20passing-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 ![status](https://img.shields.io/badge/status-research%20code-orange)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268049.svg)](https://doi.org/10.5281/zenodo.23268049)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268601.svg)](https://doi.org/10.5281/zenodo.23268601)
 
 Does your redactor still work when someone hides a phone number behind zero-width characters, Arabic-Indic digits or look-alike letters? ArEnRedact measures that, and ships a small deterministic redactor to demonstrate it.
 
@@ -126,8 +126,8 @@ Synthetic and author-written evaluation sets; one generic 10-digit national-ID r
   author  = {Raheema, Alaa Q. and Tarish, Hiba A. and Salman, Aymen D. and Humaidi, Amjad J.},
   title   = {ArEnRedact: A Threat-Driven Evaluation Framework and Deterministic Baseline for Arabic--English PII Redaction},
   year    = {2026},
-  version = {1.1.0},
-  doi     = {10.5281/zenodo.23268049},
+  version = {1.1.1},
+  doi     = {10.5281/zenodo.23268601},
   url     = {https://github.com/Akramtaha98/arenredact}
 }
 ```

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1
+- Leakage-review scoring key released (`analysis/leakage_review/Leakage_Review_KEY.csv`); scrubadub scored on the phone and e-mail identifiers it supports; README and citation metadata updated. Detector source unchanged.
+
 ## 1.1.0 (independent annotation, round-4 analyses)
 - S5 built from two non-author contributors' sentences (`data/independent/s5`, SHA-256 05a151ce…) and scored once (`results/s5_scored.json`); leakage-review sheet completed by one blind non-author reviewer (`results/leakage_review.json`, 120/120 agreement; scoring key released).
 - `make independent` reproduces Table 15 (original and corrected gold) from the released files and checks it against the committed results.
