@@ -1,0 +1,138 @@
+{
+  "environment": {
+    "python_version": "3.10.12",
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+    "note": "4-vCPU ARM64 containerized sandbox, no GPU, single-process. Latency figures reflect only the relative cost of Stages 1/3/4/5 on this hardware and should NOT be read as a production SLA; they are reported for architectural transparency, not deployment sizing."
+  },
+  "corpus": {
+    "n_sentences_total": 8970,
+    "n_sentences_train": 7176,
+    "n_sentences_dev": 897,
+    "n_sentences_test": 897,
+    "n_entities_total": 18038,
+    "n_entities_train": 14483,
+    "n_entities_dev": 1769,
+    "n_entities_test": 1786,
+    "entity_type_breakdown_total": {
+      "PERSON": 7199,
+      "PHONE": 1821,
+      "NATIONAL_ID": 1749,
+      "EMAIL": 1771,
+      "ORGANIZATION": 1869,
+      "LOCATION": 1869,
+      "IBAN": 1760
+    }
+  },
+  "clean_performance_regex_only": {
+    "scope_note": "Measured over the REGEX_DETECTABLE_TYPES subset only (PHONE, EMAIL, IBAN, NATIONAL_ID, URL, IP_ADDRESS). PERSON/ORGANIZATION/LOCATION/DATE_OF_BIRTH require the neural NER stage (Stage 2), which was not executed.",
+    "n_test_sentences": 897,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "true_positives": 730,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "per_type_true_positives": {
+      "IBAN": 180,
+      "NATIONAL_ID": 200,
+      "PHONE": 175,
+      "EMAIL": 175
+    },
+    "per_type_false_positives": {},
+    "per_type_false_negatives": {}
+  },
+  "adversarial_regex_only": {
+    "scope_note": "ARZ/TAT/DIA target Arabic-script PERSON-name characters, which the regex-only pipeline never detects in the first place (TP_clean=0 for that entity type here), so their ASR against this deterministic baseline is not a meaningful robustness signal -- it reflects Stage 1 normalization's effect on the PHONE/IBAN/NATIONAL_ID/ EMAIL/URL/IP entities that are actually detectable without Stage 2.",
+    "operators": {
+      "arz": {
+        "tp_adversarial": 730,
+        "attack_success_rate": 0.0,
+        "f1_mean_adversarial": 0.8138238573021181,
+        "bootstrap_ci_vs_clean": {
+          "observed_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "confidence": 0.95,
+          "p_value": 1.0,
+          "n_resamples": 10000
+        }
+      },
+      "tat": {
+        "tp_adversarial": 730,
+        "attack_success_rate": 0.0,
+        "f1_mean_adversarial": 0.8138238573021181,
+        "bootstrap_ci_vs_clean": {
+          "observed_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "confidence": 0.95,
+          "p_value": 1.0,
+          "n_resamples": 10000
+        }
+      },
+      "dia": {
+        "tp_adversarial": 730,
+        "attack_success_rate": 0.0,
+        "f1_mean_adversarial": 0.8138238573021181,
+        "bootstrap_ci_vs_clean": {
+          "observed_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "confidence": 0.95,
+          "p_value": 1.0,
+          "n_resamples": 10000
+        }
+      },
+      "hgl": {
+        "tp_adversarial": 730,
+        "attack_success_rate": 0.0,
+        "f1_mean_adversarial": 0.8138238573021181,
+        "bootstrap_ci_vs_clean": {
+          "observed_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "confidence": 0.95,
+          "p_value": 1.0,
+          "n_resamples": 10000
+        }
+      },
+      "cmb": {
+        "tp_adversarial": 730,
+        "attack_success_rate": 0.0,
+        "f1_mean_adversarial": 0.8138238573021181,
+        "bootstrap_ci_vs_clean": {
+          "observed_diff": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "confidence": 0.95,
+          "p_value": 1.0,
+          "n_resamples": 10000
+        }
+      }
+    }
+  },
+  "prir_lexical_overlap_adversary": {
+    "scope_note": "Weak, fully offline n-gram-overlap adversary (see reidentification.py docstring) -- a conservative LOWER BOUND on re-identification risk, not the paper's originally specified RAG-augmented infilling adversary (which requires an LM and is not executed here).",
+    "prir": 0.0,
+    "n_records": 897,
+    "n_reidentified": 0
+  },
+  "latency_stages_1_3_4_5": {
+    "n_sentences_timed": 500,
+    "mean_ms": 0.06904955200297991,
+    "std_ms": 0.009986010399352908,
+    "median_ms": 0.06860450048407074,
+    "p95_ms": 0.07666700184927322,
+    "min_ms": 0.05600000076810829,
+    "max_ms": 0.26533300115261227
+  },
+  "not_executed_in_this_run": [
+    "Stage 2 neural NER (LoRA-adapted XLM-RoBERTa) training and inference -- requires GPU and multi-hour training.",
+    "Full fine-tuning baseline for memorization comparison.",
+    "DP-SGD comparison baseline.",
+    "LiRA membership-inference attack with shadow models (harness exists and is unit-tested in evaluation/membership_inference.py, but training 128 shadow models is a multi-GPU-day workload).",
+    "Human bilingual annotator review / inter-annotator agreement on the synthetic corpus.",
+    "RAG-augmented autoregressive-infilling PRIR adversary (only the weak offline lexical-overlap adversary was run).",
+    "Component ablation study (requires the trained neural model)."
+  ]
+}

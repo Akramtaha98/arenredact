@@ -1,0 +1,204 @@
+{
+ "n_items": 330,
+ "n_gold_spans": 133,
+ "gold_by_type": {
+  "EMAIL": 35,
+  "PHONE": 42,
+  "NATIONAL_ID": 31,
+  "IBAN": 25
+ },
+ "n_positive_sentences": 123,
+ "kappa_char_before_adjudication": 0.9550383080416871,
+ "span_f1_A_vs_B": {
+  "PHONE": {
+   "tp": 35,
+   "fp": 13,
+   "fn": 5,
+   "f1": 0.7954545454545454
+  },
+  "EMAIL": {
+   "tp": 35,
+   "fp": 0,
+   "fn": 0,
+   "f1": 1.0
+  },
+  "IBAN": {
+   "tp": 21,
+   "fp": 4,
+   "fn": 8,
+   "f1": 0.7777777777777778
+  },
+  "NATIONAL_ID": {
+   "tp": 31,
+   "fp": 0,
+   "fn": 0,
+   "f1": 1.0
+  }
+ },
+ "n_disagreeing_sentences": 21,
+ "disagreements": [
+  "I021",
+  "I033",
+  "I042",
+  "I096",
+  "I121",
+  "I133",
+  "I154",
+  "I159",
+  "I195",
+  "I213",
+  "I217",
+  "I227",
+  "I232",
+  "I246",
+  "I253",
+  "I254",
+  "I258",
+  "I261",
+  "I302",
+  "I306",
+  "I323"
+ ],
+ "changed_vs_A": 16,
+ "changed_vs_B": 9,
+ "spans_A": 135,
+ "spans_B": 139,
+ "adjudicated_sha256": "9771d5196afa09bbd6e9bc3c8484bef40d31d3c8c5dbd8d5b696bc564179f9bb",
+ "scored_code_sha256": "5359202a2ba521d66ef95b3d8c2377777affeaf6ae926347b3f23dd427b3833d",
+ "scored_eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8",
+ "ours_missed": [
+  {
+   "id": "I012",
+   "type": "NATIONAL_ID",
+   "text": "1338648207"
+  },
+  {
+   "id": "I015",
+   "type": "NATIONAL_ID",
+   "text": "۱۲۸۰۳۰۵۲۲۴"
+  },
+  {
+   "id": "I024",
+   "type": "NATIONAL_ID",
+   "text": "2422208123"
+  },
+  {
+   "id": "I029",
+   "type": "NATIONAL_ID",
+   "text": "2340951616"
+  },
+  {
+   "id": "I033",
+   "type": "PHONE",
+   "text": "010762688"
+  },
+  {
+   "id": "I066",
+   "type": "NATIONAL_ID",
+   "text": "1172627562"
+  },
+  {
+   "id": "I087",
+   "type": "NATIONAL_ID",
+   "text": "1967174619"
+  },
+  {
+   "id": "I122",
+   "type": "NATIONAL_ID",
+   "text": "۱۸۱۵۵۱۷۲۸۹"
+  },
+  {
+   "id": "I150",
+   "type": "NATIONAL_ID",
+   "text": "٢٦٦٠٥٣٩٦٨٤"
+  },
+  {
+   "id": "I158",
+   "type": "NATIONAL_ID",
+   "text": "2636158218"
+  },
+  {
+   "id": "I161",
+   "type": "NATIONAL_ID",
+   "text": "1606275928"
+  },
+  {
+   "id": "I209",
+   "type": "NATIONAL_ID",
+   "text": "۲۷۵۶۴۳۷۴۲۸"
+  },
+  {
+   "id": "I212",
+   "type": "NATIONAL_ID",
+   "text": "１３９０６１７７３２"
+  },
+  {
+   "id": "I261",
+   "type": "PHONE",
+   "text": "0729930007"
+  },
+  {
+   "id": "I314",
+   "type": "IBAN",
+   "text": "sa0962884712052277210282 on the"
+  }
+ ],
+ "ours_extra": [
+  {
+   "id": "I056",
+   "type": "NATIONAL_ID",
+   "text": "2579085564"
+  },
+  {
+   "id": "I075",
+   "type": "NATIONAL_ID",
+   "text": "1282110395"
+  },
+  {
+   "id": "I088",
+   "type": "NATIONAL_ID",
+   "text": "5398022147"
+  },
+  {
+   "id": "I095",
+   "type": "NATIONAL_ID",
+   "text": "2990457484"
+  },
+  {
+   "id": "I106",
+   "type": "NATIONAL_ID",
+   "text": "0397854785"
+  },
+  {
+   "id": "I237",
+   "type": "NATIONAL_ID",
+   "text": "3555783043"
+  },
+  {
+   "id": "I280",
+   "type": "NATIONAL_ID",
+   "text": "1687280831"
+  },
+  {
+   "id": "I314",
+   "type": "IBAN",
+   "text": "sa0962884712052277210282"
+  },
+  {
+   "id": "I319",
+   "type": "NATIONAL_ID",
+   "text": "0935068734"
+  }
+ ],
+ "missed_categories": {
+  "NID missed: الرقم الوطني للمتقدم": 4,
+  "NID missed: ID card number": 8,
+  "PHONE missed": 2,
+  "IBAN missed": 1
+ },
+ "extra_categories": {
+  "NATIONAL_ID|student ID (رقم هوية الطالب)": 4,
+  "NATIONAL_ID|'identity of the donor' + count": 4,
+  "IBAN|other": 1
+ }
+}

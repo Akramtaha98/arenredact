@@ -1,0 +1,331 @@
+﻿item_id,origin,subtype,gold_json
+I001,wikipedia,en.wikipedia:37557868|plain,null
+I002,wikipedia,ar.wikipedia:3645339|digits,null
+I003,wikipedia,ar.wikipedia:6141174|digits,null
+I004,wikipedia,en.wikipedia:2230701|plain,null
+I005,synthetic_negative,number-like,[]
+I006,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 57, ""EMAIL""]]"
+I007,wikipedia,ar.wikipedia:1984799|digits,null
+I008,wikipedia,ar.wikipedia:8988334|digits,null
+I009,synthetic_positive,en|JO|fullwidth|NATIONAL_ID,"[[39, 49, ""NATIONAL_ID""]]"
+I010,synthetic_negative,number-like,[]
+I011,synthetic_positive,mix|-|western|EMAIL,"[[14, 39, ""EMAIL""]]"
+I012,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[21, 31, ""NATIONAL_ID""]]"
+I013,wikipedia,en.wikipedia:785120|digits,null
+I014,synthetic_positive,mix|-|western|EMAIL,"[[14, 48, ""EMAIL""]]"
+I015,synthetic_positive,en|KW|ext_arabic_indic|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I016,wikipedia,ar.wikipedia:4883104|digits,null
+I017,wikipedia,ar.wikipedia:8762611|plain,null
+I018,synthetic_negative,number-like,[]
+I019,synthetic_positive,ar|-|western|EMAIL,"[[21, 48, ""EMAIL""]]"
+I020,synthetic_positive,ar|SA|western|PHONE,"[[16, 34, ""PHONE""]]"
+I021,synthetic_positive,en|IQ|western|PHONE,"[[21, 40, ""PHONE""]]"
+I022,wikipedia,ar.wikipedia:4330914|digits,null
+I023,wikipedia,ar.wikipedia:7750900|digits,null
+I024,synthetic_positive,en|KW|western|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I025,synthetic_positive,en|IQ|western|IBAN,"[[23, 46, ""IBAN""]]"
+I026,synthetic_positive,ar|-|western|EMAIL,"[[31, 56, ""EMAIL""]]"
+I027,synthetic_positive,mix|-|western|EMAIL,"[[14, 38, ""EMAIL""]]"
+I028,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 56, ""EMAIL""]]"
+I029,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[21, 31, ""NATIONAL_ID""]]"
+I030,wikipedia,ar.wikipedia:6503645|plain,null
+I031,synthetic_positive,mix|JO|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I032,synthetic_positive,ar|-|western|EMAIL,"[[21, 46, ""EMAIL""]]"
+I033,synthetic_positive,en|EG|western|local|PHONE,"[[21, 30, ""PHONE""]]"
+I034,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 66, ""EMAIL""]]"
+I035,synthetic_negative,number-like,[]
+I036,wikipedia,en.wikipedia:73005074|digits,null
+I037,wikipedia,ar.wikipedia:1196703|plain,null
+I038,wikipedia,ar.wikipedia:6427276|digits,null
+I039,wikipedia,ar.wikipedia:1240491|plain,null
+I040,wikipedia,ar.wikipedia:4620762|plain,null
+I041,wikipedia,en.wikipedia:157569|plain,null
+I042,synthetic_positive,ar|KW|western|PHONE,"[[16, 30, ""PHONE""]]"
+I043,wikipedia,en.wikipedia:58402086|digits,null
+I044,synthetic_positive,mix|BH|western|local|PHONE,"[[10, 18, ""PHONE""]]"
+I045,synthetic_negative,number-like,[]
+I046,wikipedia,ar.wikipedia:6403833|digits,null
+I047,synthetic_positive,mix|IQ|western|PHONE,"[[10, 27, ""PHONE""]]"
+I048,synthetic_negative,number-like,[]
+I049,wikipedia,ar.wikipedia:2077273|digits,null
+I050,synthetic_positive,ar|SA|western|PHONE,"[[30, 48, ""PHONE""]]"
+I051,wikipedia,en.wikipedia:4813277|digits,null
+I052,synthetic_negative,number-like,[]
+I053,synthetic_positive,ar|EG|western|PHONE,"[[19, 34, ""PHONE""]]"
+I054,synthetic_positive,en|KW|western|PHONE,"[[38, 52, ""PHONE""]]"
+I055,wikipedia,ar.wikipedia:7865954|digits,null
+I056,synthetic_positive,ar|EG|western|NATIONAL_ID,"[[16, 26, ""NATIONAL_ID""]]"
+I057,synthetic_negative,number-like,[]
+I058,synthetic_positive,ar|IQ|western|IBAN,"[[23, 46, ""IBAN""]]"
+I059,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[26, 36, ""NATIONAL_ID""]]"
+I060,synthetic_positive,ar|AE|western|IBAN,"[[30, 58, ""IBAN""]]"
+I061,wikipedia,ar.wikipedia:6946076|digits,null
+I062,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 58, ""EMAIL""]]"
+I063,wikipedia,ar.wikipedia:3430935|plain,null
+I064,synthetic_positive,en|-|western|EMAIL,"[[30, 52, ""EMAIL""]]"
+I065,synthetic_negative,number-like,[]
+I066,synthetic_positive,ar|JO|western|NATIONAL_ID,"[[21, 31, ""NATIONAL_ID""]]"
+I067,synthetic_negative,number-like,[]
+I068,synthetic_negative,number-like,[]
+I069,wikipedia,en.wikipedia:24085180|plain,null
+I070,synthetic_positive,ar|EG|western|IBAN,"[[30, 59, ""IBAN""]]"
+I071,synthetic_positive,mix|JO|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I072,wikipedia,en.wikipedia:26411619|digits,null
+I073,synthetic_positive,en|EG|western|PHONE,"[[21, 34, ""PHONE""]]"
+I074,wikipedia,en.wikipedia:32528659|plain,null
+I075,synthetic_positive,ar|BH|western|NATIONAL_ID,"[[16, 26, ""NATIONAL_ID""]]"
+I076,synthetic_positive,en|-|western|EMAIL,"[[20, 44, ""EMAIL""]]"
+I077,wikipedia,en.wikipedia:45464118|digits,null
+I078,synthetic_negative,number-like,[]
+I079,synthetic_negative,number-like,[]
+I080,synthetic_negative,number-like,[]
+I081,synthetic_positive,en|multi,"[[5, 21, ""PHONE""], [34, 68, ""EMAIL""]]"
+I082,wikipedia,en.wikipedia:51424307|digits,null
+I083,synthetic_negative,number-like,[]
+I084,synthetic_positive,en|KW|fullwidth|local|PHONE,"[[20, 28, ""PHONE""]]"
+I085,synthetic_positive,ar|IQ|western|IBAN,"[[23, 46, ""IBAN""]]"
+I086,synthetic_positive,mix|IQ|western|PHONE,"[[10, 24, ""PHONE""]]"
+I087,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[21, 31, ""NATIONAL_ID""]]"
+I088,synthetic_negative,number-like,[]
+I089,wikipedia,ar.wikipedia:9557993|plain,null
+I090,synthetic_negative,number-like,[]
+I091,wikipedia,en.wikipedia:40177437|digits,null
+I092,synthetic_negative,number-like,[]
+I093,wikipedia,en.wikipedia:32691356|digits,null
+I094,synthetic_positive,mix|KW|western|IBAN,"[[18, 48, ""IBAN""]]"
+I095,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[16, 26, ""NATIONAL_ID""]]"
+I096,synthetic_negative,number-like,[]
+I097,synthetic_positive,ar|KW|western|PHONE,"[[19, 32, ""PHONE""]]"
+I098,wikipedia,ar.wikipedia:485842|digits,null
+I099,synthetic_negative,number-like,[]
+I100,synthetic_negative,number-like,[]
+I101,synthetic_negative,number-like,[]
+I102,wikipedia,en.wikipedia:2230701|plain,null
+I103,wikipedia,en.wikipedia:16062607|digits,null
+I104,synthetic_negative,number-like,[]
+I105,wikipedia,en.wikipedia:70296962|digits,null
+I106,synthetic_negative,number-like,[]
+I107,wikipedia,ar.wikipedia:5358073|plain,null
+I108,synthetic_negative,number-like,[]
+I109,wikipedia,ar.wikipedia:8122919|plain,null
+I110,wikipedia,ar.wikipedia:5416929|digits,null
+I111,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 59, ""EMAIL""]]"
+I112,synthetic_negative,number-like,[]
+I113,synthetic_positive,mix|EG|western|PHONE,"[[10, 25, ""PHONE""]]"
+I114,synthetic_positive,mix|KW|western|PHONE,"[[10, 22, ""PHONE""]]"
+I115,synthetic_positive,ar|JO|western|NATIONAL_ID,"[[26, 36, ""NATIONAL_ID""]]"
+I116,synthetic_positive,mix|BH|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I117,synthetic_positive,en|IQ|western|PHONE,"[[36, 51, ""PHONE""]]"
+I118,synthetic_positive,mix|IQ|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I119,synthetic_positive,ar|BH|western|IBAN,"[[30, 57, ""IBAN""]]"
+I120,synthetic_positive,mix|AE|western|IBAN,"[[18, 41, ""IBAN""]]"
+I121,synthetic_negative,number-like,[]
+I122,synthetic_positive,en|JO|ext_arabic_indic|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I123,synthetic_positive,en|KW|western|IBAN,"[[23, 60, ""IBAN""]]"
+I124,wikipedia,ar.wikipedia:5956171|digits,null
+I125,synthetic_negative,number-like,[]
+I126,synthetic_negative,number-like,[]
+I127,synthetic_positive,ar|-|western|EMAIL,"[[31, 57, ""EMAIL""]]"
+I128,synthetic_negative,number-like,[]
+I129,synthetic_positive,ar|SA|western|IBAN,"[[30, 54, ""IBAN""]]"
+I130,wikipedia,ar.wikipedia:83046|digits,null
+I131,synthetic_negative,number-like,[]
+I132,synthetic_positive,ar|SA|western|PHONE,"[[30, 48, ""PHONE""]]"
+I133,synthetic_negative,number-like,[]
+I134,wikipedia,en.wikipedia:8397399|digits,null
+I135,wikipedia,ar.wikipedia:9772|digits,null
+I136,synthetic_negative,number-like,[]
+I137,wikipedia,en.wikipedia:13920197|plain,null
+I138,wikipedia,en.wikipedia:22366161|digits,null
+I139,wikipedia,ar.wikipedia:1585270|digits,null
+I140,synthetic_positive,en|AE|fullwidth|PHONE,"[[20, 33, ""PHONE""]]"
+I141,wikipedia,en.wikipedia:15636395|digits,null
+I142,synthetic_negative,number-like,[]
+I143,synthetic_negative,number-like,[]
+I144,wikipedia,ar.wikipedia:10422298|digits,null
+I145,synthetic_negative,number-like,[]
+I146,synthetic_positive,en|JO|western|IBAN,"[[23, 60, ""IBAN""]]"
+I147,wikipedia,en.wikipedia:61769283|digits,null
+I148,wikipedia,ar.wikipedia:3902478|digits,null
+I149,synthetic_negative,number-like,[]
+I150,synthetic_positive,en|KW|arabic_indic|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I151,wikipedia,en.wikipedia:57141412|digits,null
+I152,wikipedia,en.wikipedia:16062607|plain,null
+I153,wikipedia,en.wikipedia:69883513|plain,null
+I154,synthetic_positive,mix|KW|western|PHONE,"[[10, 24, ""PHONE""]]"
+I155,synthetic_negative,number-like,[]
+I156,wikipedia,en.wikipedia:8298702|plain,null
+I157,wikipedia,en.wikipedia:32691356|digits,null
+I158,synthetic_positive,en|KW|western|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I159,synthetic_negative,number-like,[]
+I160,wikipedia,en.wikipedia:10795188|digits,null
+I161,synthetic_positive,en|EG|western|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I162,synthetic_negative,number-like,[]
+I163,synthetic_negative,number-like,[]
+I164,wikipedia,en.wikipedia:22366161|digits,null
+I165,wikipedia,ar.wikipedia:1688530|digits,null
+I166,synthetic_positive,mix|BH|western|IBAN,"[[18, 40, ""IBAN""]]"
+I167,wikipedia,en.wikipedia:69126315|plain,null
+I168,synthetic_positive,mix|BH|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I169,synthetic_positive,en|multi,"[[5, 21, ""PHONE""], [34, 58, ""EMAIL""]]"
+I170,synthetic_negative,number-like,[]
+I171,wikipedia,en.wikipedia:52262776|digits,null
+I172,synthetic_positive,mix|BH|western|PHONE,"[[10, 24, ""PHONE""]]"
+I173,wikipedia,en.wikipedia:4813277|digits,null
+I174,wikipedia,ar.wikipedia:9549845|plain,null
+I175,wikipedia,en.wikipedia:26281666|digits,null
+I176,wikipedia,ar.wikipedia:8632446|plain,null
+I177,synthetic_positive,mix|-|western|EMAIL,"[[14, 39, ""EMAIL""]]"
+I178,synthetic_negative,number-like,[]
+I179,synthetic_positive,mix|AE|western|IBAN,"[[18, 41, ""IBAN""]]"
+I180,synthetic_positive,ar|-|western|EMAIL,"[[21, 53, ""EMAIL""]]"
+I181,synthetic_positive,mix|SA|western|PHONE,"[[10, 23, ""PHONE""]]"
+I182,synthetic_negative,number-like,[]
+I183,synthetic_positive,mix|IQ|western|PHONE,"[[10, 27, ""PHONE""]]"
+I184,synthetic_positive,en|-|western|EMAIL,"[[22, 45, ""EMAIL""]]"
+I185,synthetic_positive,mix|-|western|EMAIL,"[[14, 36, ""EMAIL""]]"
+I186,synthetic_positive,mix|SA|western|PHONE,"[[10, 26, ""PHONE""]]"
+I187,synthetic_negative,number-like,[]
+I188,wikipedia,ar.wikipedia:645521|digits,null
+I189,wikipedia,en.wikipedia:68398694|digits,null
+I190,wikipedia,en.wikipedia:772468|digits,null
+I191,synthetic_negative,number-like,[]
+I192,synthetic_negative,number-like,[]
+I193,synthetic_positive,ar|EG|western|IBAN,"[[30, 66, ""IBAN""]]"
+I194,synthetic_negative,number-like,[]
+I195,synthetic_positive,en|KW|western|IBAN,"[[24, 54, ""IBAN""]]"
+I196,wikipedia,en.wikipedia:12891558|digits,null
+I197,synthetic_negative,number-like,[]
+I198,synthetic_positive,mix|-|western|EMAIL,"[[14, 39, ""EMAIL""]]"
+I199,synthetic_positive,en|IQ|western|IBAN,"[[23, 46, ""IBAN""]]"
+I200,synthetic_positive,ar|BH|western|NATIONAL_ID,"[[26, 36, ""NATIONAL_ID""]]"
+I201,wikipedia,en.wikipedia:57141412|plain,null
+I202,synthetic_negative,number-like,[]
+I203,wikipedia,en.wikipedia:36141978|plain,null
+I204,synthetic_positive,mix|SA|western|IBAN,"[[18, 42, ""IBAN""]]"
+I205,wikipedia,ar.wikipedia:3975926|digits,null
+I206,synthetic_positive,ar|-|western|EMAIL,"[[21, 46, ""EMAIL""]]"
+I207,wikipedia,en.wikipedia:74873992|plain,null
+I208,synthetic_positive,ar|-|western|EMAIL,"[[21, 53, ""EMAIL""]]"
+I209,synthetic_positive,en|BH|ext_arabic_indic|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I210,synthetic_positive,en|-|western|EMAIL,"[[22, 55, ""EMAIL""]]"
+I211,wikipedia,ar.wikipedia:5199802|plain,null
+I212,synthetic_positive,en|BH|fullwidth|NATIONAL_ID,"[[32, 42, ""NATIONAL_ID""]]"
+I213,wikipedia,ar.wikipedia:6466621|digits,null
+I214,synthetic_positive,ar|BH|western|NATIONAL_ID,"[[26, 36, ""NATIONAL_ID""]]"
+I215,synthetic_negative,number-like,[]
+I216,synthetic_positive,en|-|western|EMAIL,"[[24, 51, ""EMAIL""]]"
+I217,synthetic_negative,number-like,[]
+I218,wikipedia,ar.wikipedia:3581761|plain,null
+I219,synthetic_positive,ar|EG|western|PHONE,"[[19, 33, ""PHONE""]]"
+I220,synthetic_negative,number-like,[]
+I221,synthetic_negative,number-like,[]
+I222,synthetic_negative,number-like,[]
+I223,synthetic_negative,number-like,[]
+I224,synthetic_negative,number-like,[]
+I225,wikipedia,en.wikipedia:5124738|digits,null
+I226,synthetic_positive,en|IQ|western|NATIONAL_ID,"[[24, 34, ""NATIONAL_ID""]]"
+I227,synthetic_negative,number-like,[]
+I228,synthetic_positive,mix|BH|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I229,wikipedia,ar.wikipedia:6503645|plain,null
+I230,wikipedia,ar.wikipedia:455379|digits,null
+I231,synthetic_positive,mix|IQ|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I232,synthetic_positive,en|IQ|western|IBAN,"[[24, 47, ""IBAN""]]"
+I233,synthetic_negative,number-like,[]
+I234,synthetic_positive,mix|EG|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I235,synthetic_positive,ar|BH|western|local|PHONE,"[[19, 27, ""PHONE""]]"
+I236,wikipedia,en.wikipedia:923072|plain,null
+I237,synthetic_negative,number-like,[]
+I238,wikipedia,en.wikipedia:461264|plain,null
+I239,synthetic_positive,mix|-|western|EMAIL,"[[14, 39, ""EMAIL""]]"
+I240,synthetic_negative,number-like,[]
+I241,wikipedia,en.wikipedia:26411619|digits,null
+I242,wikipedia,ar.wikipedia:8224294|plain,null
+I243,synthetic_negative,number-like,[]
+I244,wikipedia,en.wikipedia:27440407|digits,null
+I245,wikipedia,en.wikipedia:772468|plain,null
+I246,synthetic_negative,number-like,[]
+I247,wikipedia,en.wikipedia:61920841|digits,null
+I248,synthetic_positive,en|IQ|ext_arabic_indic|PHONE,"[[20, 37, ""PHONE""]]"
+I249,synthetic_positive,en|SA|arabic_indic|PHONE,"[[21, 37, ""PHONE""]]"
+I250,wikipedia,ar.wikipedia:10128571|digits,null
+I251,wikipedia,ar.wikipedia:455379|digits,null
+I252,wikipedia,ar.wikipedia:930408|digits,null
+I253,synthetic_positive,en|EG|western|IBAN,"[[24, 60, ""IBAN""]]"
+I254,synthetic_negative,number-like,[]
+I255,wikipedia,en.wikipedia:49373952|digits,null
+I256,wikipedia,en.wikipedia:73005074|plain,null
+I257,wikipedia,ar.wikipedia:6425627|digits,null
+I258,synthetic_positive,en|SA|fullwidth|PHONE,"[[36, 50, ""PHONE""]]"
+I259,synthetic_positive,mix|AE|western|IBAN,"[[18, 46, ""IBAN""]]"
+I260,wikipedia,ar.wikipedia:6281708|digits,null
+I261,synthetic_positive,ar|JO|western|local|PHONE,"[[30, 40, ""PHONE""]]"
+I262,wikipedia,ar.wikipedia:9974009|plain,null
+I263,wikipedia,en.wikipedia:26411619|digits,null
+I264,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 55, ""EMAIL""]]"
+I265,synthetic_positive,ar|IQ|western|PHONE,"[[19, 36, ""PHONE""]]"
+I266,synthetic_positive,mix|AE|western|PHONE,"[[10, 26, ""PHONE""]]"
+I267,synthetic_negative,number-like,[]
+I268,wikipedia,ar.wikipedia:2968290|digits,null
+I269,synthetic_positive,en|KW|western|NATIONAL_ID,"[[39, 49, ""NATIONAL_ID""]]"
+I270,wikipedia,en.wikipedia:5666365|digits,null
+I271,wikipedia,ar.wikipedia:10390900|digits,null
+I272,synthetic_positive,en|-|western|EMAIL,"[[20, 52, ""EMAIL""]]"
+I273,wikipedia,ar.wikipedia:2913274|plain,null
+I274,wikipedia,en.wikipedia:54499208|digits,null
+I275,synthetic_positive,ar|EG|western|IBAN,"[[30, 59, ""IBAN""]]"
+I276,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 57, ""EMAIL""]]"
+I277,wikipedia,ar.wikipedia:7865954|plain,null
+I278,synthetic_positive,mix|SA|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I279,synthetic_positive,en|AE|arabic_indic|PHONE,"[[20, 38, ""PHONE""]]"
+I280,synthetic_positive,ar|KW|western|NATIONAL_ID,"[[16, 26, ""NATIONAL_ID""]]"
+I281,synthetic_negative,number-like,[]
+I282,wikipedia,en.wikipedia:32691356|digits,null
+I283,synthetic_negative,number-like,[]
+I284,wikipedia,en.wikipedia:6863865|digits,null
+I285,wikipedia,en.wikipedia:40177437|digits,null
+I286,wikipedia,en.wikipedia:2230701|digits,null
+I287,synthetic_negative,number-like,[]
+I288,synthetic_negative,number-like,[]
+I289,wikipedia,en.wikipedia:13920197|digits,null
+I290,synthetic_negative,number-like,[]
+I291,wikipedia,en.wikipedia:6279126|digits,null
+I292,wikipedia,en.wikipedia:421008|plain,null
+I293,wikipedia,ar.wikipedia:9390645|digits,null
+I294,synthetic_negative,number-like,[]
+I295,wikipedia,ar.wikipedia:6012523|digits,null
+I296,synthetic_positive,ar|IQ|western|PHONE,"[[16, 33, ""PHONE""]]"
+I297,wikipedia,en.wikipedia:31769403|plain,null
+I298,synthetic_negative,number-like,[]
+I299,synthetic_positive,en|-|western|EMAIL,"[[30, 52, ""EMAIL""]]"
+I300,wikipedia,ar.wikipedia:7865954|digits,null
+I301,wikipedia,ar.wikipedia:5378399|digits,null
+I302,synthetic_negative,number-like,[]
+I303,wikipedia,ar.wikipedia:9500166|digits,null
+I304,wikipedia,ar.wikipedia:6445479|digits,null
+I305,synthetic_negative,number-like,[]
+I306,synthetic_positive,en|IQ|western|IBAN,"[[24, 47, ""IBAN""]]"
+I307,synthetic_positive,en|KW|western|NATIONAL_ID,"[[39, 49, ""NATIONAL_ID""]]"
+I308,synthetic_positive,en|multi,"[[5, 19, ""PHONE""], [32, 57, ""EMAIL""]]"
+I309,synthetic_positive,mix|JO|western|IBAN,"[[18, 55, ""IBAN""]]"
+I310,synthetic_negative,number-like,[]
+I311,synthetic_positive,mix|BH|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I312,synthetic_positive,en|-|western|EMAIL,"[[20, 41, ""EMAIL""]]"
+I313,synthetic_positive,en|-|western|EMAIL,"[[24, 49, ""EMAIL""]]"
+I314,synthetic_positive,en|SA|western|IBAN,"[[24, 48, ""IBAN""]]"
+I315,wikipedia,ar.wikipedia:8073144|digits,null
+I316,synthetic_positive,mix|SA|western|NATIONAL_ID,"[[22, 32, ""NATIONAL_ID""]]"
+I317,synthetic_negative,number-like,[]
+I318,synthetic_negative,number-like,[]
+I319,synthetic_negative,number-like,[]
+I320,wikipedia,ar.wikipedia:35991|plain,null
+I321,synthetic_negative,number-like,[]
+I322,synthetic_positive,mix|-|western|EMAIL,"[[14, 40, ""EMAIL""]]"
+I323,synthetic_positive,ar|KW|western|PHONE,"[[19, 33, ""PHONE""]]"
+I324,wikipedia,ar.wikipedia:532809|digits,null
+I325,synthetic_positive,ar|-|western|EMAIL,"[[31, 53, ""EMAIL""]]"
+I326,wikipedia,en.wikipedia:785120|digits,null
+I327,synthetic_negative,number-like,[]
+I328,wikipedia,ar.wikipedia:7855731|plain,null
+I329,synthetic_positive,mix|KW|western|IBAN,"[[18, 55, ""IBAN""]]"
+I330,synthetic_positive,en|EG|western|PHONE,"[[21, 36, ""PHONE""]]"

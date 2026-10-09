@@ -1,0 +1,181 @@
+sentence_id,text,type,language,script
+A001,Give me a ring at +９６６５６３９５７１６９ whenever you're free to discuss the project.,PHONE,English,fullwidth
+A002,"The technician left his contact as +971 56 903 9103, so try reaching him there.",PHONE,English,western
+A003,My new mobile number is +20-10-39237720 starting from next week.,PHONE,English,western
+A004,You can text the clinic on +973.3732.9956 to book your dental appointment.,PHONE,English,western
+A005,Please forward all urgent inquiries to our dedicated hotline: 009647805798776.,PHONE,English,western
+A006,اتصل فيني على +۹۶۲ (۷۷) ۰۷۱ ۷۸۷۲ لما تخلص شغل عشان نطلع.,PHONE,Arabic,ext_arabic_indic
+A007,رقم جوالي الجديد هو +96565060635، احفظه عندك.,PHONE,Arabic,western
+A008,المندوب كلمني من الرقم +966 53 307 1403 وقال إنه بالطريق.,PHONE,Arabic,western
+A009,لو احتجت أي مساعدة بخصوص الطلب، تواصل مع خدمة العملاء على +971-54-287-2856.,PHONE,Arabic,western
+A010,تقدر تتواصل مع العيادة للحجز عن طريق الواتساب على +20.11.18890739.,PHONE,Arabic,western
+A011,Please call me on ۰۰۹۷۳۳۶۸۹۶۱۷۹ عشان نتفق على موعد الـ meeting.,PHONE,Code-mixed Arabic-English,ext_arabic_indic
+A012,الـ number تبع الدليفري هو +964 (75) 048 95776 if you want to order food.,PHONE,Code-mixed Arabic-English,western
+A013,Just drop me a message on WhatsApp at +962794335494 وبشوفها بعدين.,PHONE,Code-mixed Arabic-English,western
+A014,لو احتجت أي شي urgent، my phone is +965 553 39953.,PHONE,Code-mixed Arabic-English,western
+A015,Can you share his contact? رقم مسؤل الـ HR هو +966-53-301-5814.,PHONE,Code-mixed Arabic-English,western
+A016,Please transfer the invoice amount directly to AE746587235592556099593 before the end of the month.,IBAN,English,western
+A017,My updated bank account details for the salary deposit is eg101685016188352806050974883.,IBAN,English,western
+A018,The refund will be credited back to your account BH75 CBJO 2691 1986 6542 53 within three business days.,IBAN,English,western
+A019,Kindly wire the tuition fees to the university's account IQ27NBOK817840406503174 and share the receipt.,IBAN,English,western
+A020,Your payment to the international beneficiary jo63nbok8774111089910007914755 has been successfully processed.,IBAN,English,western
+A021,يرجى تحويل الدفعة الأخيرة من المشروع على الآيبان KW11 NBOK 8575 7162 7948 9734 2244 75.,IBAN,Arabic,western
+A022,راتبك رح ينزل على حسابك البنكي SA0510469753659054372966 في نهاية الأسبوع.,IBAN,Arabic,western
+A023,ضفتك كمستفيد، بس ياريت تتأكد إن ae417254618361877005007 هو حسابك الصحيح.,IBAN,Arabic,western
+A024,لتحويل التبرعات، استخدم رقم الحساب الدولي EG49 1494 8968 1509 9652 6379 0289 8.,IBAN,Arabic,western
+A025,تم استرداد المبلغ إلى حسابك BH60NBOB81504359768058 بنجاح.,IBAN,Arabic,western
+A026,Please transfer the payment to my IBAN iq13nbok171762748901333 عشان أقدر أأكد الحجز.,IBAN,Code-mixed Arabic-English,western
+A027,الـ salary تبعك نزل في account JO15 ARAB 5112 5675 6471 8569 3969 55 اليوم الصبح.,IBAN,Code-mixed Arabic-English,western
+A028,Can you check if KW39ARAB7869754800227792702062 هو الـ bank details الصح تبع الشركة؟,IBAN,Code-mixed Arabic-English,western
+A029,حولت الفلوس already على sa0499063680724209954731، please confirm receipt.,IBAN,Code-mixed Arabic-English,western
+A030,We need to update your IBAN to AE57 9978 2645 0721 8733 676 in the system عشان الراتب.,IBAN,Code-mixed Arabic-English,western
+A031,Send the revised contract to hassan.noor9@gmail.com by tomorrow morning.,EMAIL,English,western
+A032,"For customer support, you can reach out to us at fatima.noor63@company.com.",EMAIL,English,western
+A033,My personal address is omar.yousef71@yahoo.com if you want to share the photos.,EMAIL,English,western
+A034,You will receive a confirmation message at layla.layla94@yahoo.com shortly.,EMAIL,English,western
+A035,Please cc yousef.layla24@yahoo.com when you reply to the client's message.,EMAIL,English,western
+A036,أرسل لي السيرة الذاتية على ahmed.mariam50@yahoo.com عشان أعرضها على المدير.,EMAIL,Arabic,western
+A037,إذا عندك أي استفسار، تقدر تراسلنا على hassan.fatima84@gmail.com في أي وقت.,EMAIL,Arabic,western
+A038,تم إرسال تذكرة الطيران إلى بريدك الإلكتروني hassan.noor96@uotechnology.edu.iq.,EMAIL,Arabic,western
+A039,يرجى تحديث الإيميل إلى ahmed.yousef19@gmail.com في ملفك الوظيفي.,EMAIL,Arabic,western
+A040,لا تنسى تحط mariam.yousef94@company.com في نسخة الرسالة لما ترد على العميل.,EMAIL,Arabic,western
+A041,Send the file to hassan.layla63@uotechnology.edu.iq أول ما تخلص الـ task.,EMAIL,Code-mixed Arabic-English,western
+A042,الـ email تبع الـ manager هو noor.ahmed79@uotechnology.edu.iq if you need an approval.,EMAIL,Code-mixed Arabic-English,western
+A043,I just forwarded the document to ahmed.mariam55@gmail.com، شيك الإنبوكس تبعك.,EMAIL,Code-mixed Arabic-English,western
+A044,"If you have questions, drop an email to noor.ahmed26@company.com وبنرد عليك.",EMAIL,Code-mixed Arabic-English,western
+A045,Please confirm your registration by clicking the link sent to layla.mariam10@gmail.com يا بطل.,EMAIL,Code-mixed Arabic-English,western
+A046,Please enter your civil identification number ۲۹۸۵۵۱۰۲۵۶ to proceed with the application.,NATIONAL_ID,English,ext_arabic_indic
+A047,The resident ID 1645555506 is expired and needs to be renewed immediately.,NATIONAL_ID,English,western
+A048,The patient registered with national ID 1788970149 is ready for the consultation.,NATIONAL_ID,English,western
+A049,Your government issued identity number 2662641920 will be used for the background check.,NATIONAL_ID,English,western
+A050,Provide the national identification number 2511562872 at the reception desk.,NATIONAL_ID,English,western
+A051,يرجى إدخال رقم الهوية الوطنية ٢٨٥٤٥٧٨٤٨٥ لإتمام عملية التسجيل.,NATIONAL_ID,Arabic,arabic_indic
+A052,بطاقة الأحوال اللي رقمها 2207763972 منتهية وتحتاج تجديد من أبشر.,NATIONAL_ID,Arabic,western
+A053,رقم الإقامة 1267698433 الخاص بالعامل مسجل في النظام بشكل صحيح.,NATIONAL_ID,Arabic,western
+A054,راجع المرور ومعك الهوية 2382292485 عشان تسدد المخالفات.,NATIONAL_ID,Arabic,western
+A055,المراجع صاحب الرقم القومي 2323246305 مطلوب في غرفة الطبيب.,NATIONAL_ID,Arabic,western
+A056,Please type your civil ID ۲۲۰۲۷۱۴۵۵۴ في الخانة المخصصة عشان نعمل login.,NATIONAL_ID,Code-mixed Arabic-English,ext_arabic_indic
+A057,الـ resident permit اللي رقمها 1137066227 is valid till next year.,NATIONAL_ID,Code-mixed Arabic-English,western
+A058,We need your national ID 1250131820 عشان نخلص أوراق الـ insurance.,NATIONAL_ID,Code-mixed Arabic-English,western
+A059,Make sure to bring the ID 2621557138 معك للـ appointment.,NATIONAL_ID,Code-mixed Arabic-English,western
+A060,Your application with ID 2207120167 was rejected عشان الدوكيومنتس ناقصة.,NATIONAL_ID,Code-mixed Arabic-English,western
+A061,The invoice amount is exactly 658809981 dollars and needs to be settled today.,NEGATIVE,English,western
+A062,"Our flight booking reference is 047445, let's check in online.",NEGATIVE,English,western
+A063,Please enter the verification code 7141 to access your account securely.,NEGATIVE,English,western
+A064,The system generated a random session token of 244806488 for this login attempt.,NEGATIVE,English,western
+A065,He bought the car with license plate 651469916 from the dealership last month.,NEGATIVE,English,western
+A066,The new television model comes with a resolution of 242985363 pixels.,NEGATIVE,English,western
+A067,I tracked the parcel and the shipment tracking number is 0391447609.,NEGATIVE,English,western
+A068,We need to print 761801 copies of the annual report for the board meeting.,NEGATIVE,English,western
+A069,She read about the historical event that took place in the year 400.,NEGATIVE,English,western
+A070,The employee swipe card reader showed an error code 272 this morning.,NEGATIVE,English,western
+A071,تكلفة المشروع وصلت إلى 750284 ريال سعودي هذا الشهر.,NEGATIVE,Arabic,western
+A072,رمز التحقق الخاص بك هو 195940، لا تشاركه مع أحد.,NEGATIVE,Arabic,western
+A073,شحنتك رقم 4428 قيد التوصيل وبتوصلك اليوم.,NEGATIVE,Arabic,western
+A074,السيارة اللي لوحتها 138 واقفة في الممنوع.,NEGATIVE,Arabic,western
+A075,عدد سكان المدينة تجاوز 4979698054 نسمة بحسب الإحصائية الأخيرة.,NEGATIVE,Arabic,western
+A076,تم قراءة المقياس الذكي للكهرباء وسجل 724173478 كيلو واط.,NEGATIVE,Arabic,western
+A077,رقم الطلب حقك في المطعم هو 417982، انتظر شوي ويجهز.,NEGATIVE,Arabic,western
+A078,الجهاز اللي عندي رقمه التسلسلي 659335 وفيه مشكلة بالشاشة.,NEGATIVE,Arabic,western
+A079,راجع الموظف اللي في شباك 226966 عشان يخلص لك المعاملة.,NEGATIVE,Arabic,western
+A080,جهاز قراءة البطاقات الشخصية مكسور وتكلفة تصليحه 7296278901 دينار.,NEGATIVE,Arabic,western
+A081,Your OTP is 985184193، please enter it in the app.,NEGATIVE,Code-mixed Arabic-English,western
+A082,الـ tracking number تبع الشحنة هو 210572 and it says delivered.,NEGATIVE,Code-mixed Arabic-English,western
+A083,My new laptop has a serial number of 414052 ومكتوب من ورا.,NEGATIVE,Code-mixed Arabic-English,western
+A084,We need a budget of 453 dollars عشان نغطي مصاريف الـ campaign.,NEGATIVE,Code-mixed Arabic-English,western
+A085,The error code 915633820 بيطلع لي كل ما أحاول أعمل submit.,NEGATIVE,Code-mixed Arabic-English,western
+A086,رح نسافر على الـ flight رقم 716457 بكرة الصبح.,NEGATIVE,Code-mixed Arabic-English,western
+A087,الـ order confirmation تبعك هو 704، check your spam folder.,NEGATIVE,Code-mixed Arabic-English,western
+A088,"I got a ticket, رقم اللوحة تبع سيارتي 211514986 للأسف.",NEGATIVE,Code-mixed Arabic-English,western
+A089,"Please check the identity document reader, it shows a fault code 988.",NEGATIVE,Code-mixed Arabic-English,western
+A090,The total distance is 211437 kilometers وهو بعيد كثير عن هون.,NEGATIVE,Code-mixed Arabic-English,western
+B001,Please call me on +９６５５０２１９０９６ after lunch so we can discuss the project.,PHONE,English,fullwidth
+B002,You can reach the customer support center directly by dialing +966 56 088 3934 during our business hours.,PHONE,English,western
+B003,I tried messaging her on WhatsApp at +971-52-355-6026 but have not received a reply yet.,PHONE,English,western
+B004,My new mobile number is +20.10.24350744 if you need to update your contacts.,PHONE,English,western
+B005,The clinic reception desk can be contacted at 0097339191189 for booking appointments.,PHONE,English,western
+B006,ممكن تتصل فيني على +٩٦٤ (٧٥) ٠٣١ ٣٢٠٥٧ بعد الدوام عشان نتفاهم على الموضوع.,PHONE,Arabic,arabic_indic
+B007,الرجاء التواصل مع خدمة العملاء عبر الرقم +962793806388 للحصول على المساعدة.,PHONE,Arabic,western
+B008,حاولت أرن عليه على +965 502 75850 بس ما كان يرد علي.,PHONE,Arabic,western
+B009,رقم موبايلي الجديد هو +966-59-866-9057 احفظه عندك في السجل.,PHONE,Arabic,western
+B010,للحجز والاستفسار يرجى الاتصال على +971.54.000.3085 في أي وقت.,PHONE,Arabic,western
+B011,بليز دق علي على ۰۰۲۰۱۰۳۲۷۴۳۶۶۶ as soon as you finish the meeting.,PHONE,Code-mixed Arabic-English,ext_arabic_indic
+B012,I will forward your request to the team وتقدر تكلمهم على +973 (37) 578 687 for follow up.,PHONE,Code-mixed Arabic-English,western
+B013,My new phone number is +9647507648254 بليز سيفه عندك.,PHONE,Code-mixed Arabic-English,western
+B014,Send me a voice note on WhatsApp at +962 7 9160 8065 عشان أسمعها بالسيارة.,PHONE,Code-mixed Arabic-English,western
+B015,The customer service hotline is +965-558-29299 اتصل عليهم وهم بيحلون المشكلة.,PHONE,Code-mixed Arabic-English,western
+B016,Please transfer the rent payment to my bank account using the IBAN SA7938881310019327745168 by tomorrow.,IBAN,English,western
+B017,Our international bank account number is ae023866695254969278760 for all overseas wire transfers.,IBAN,English,western
+B018,I need to update my payroll details with my new IBAN which is EG59 3852 6484 4056 1110 1392 8542 9 to receive my salary.,IBAN,English,western
+B019,"To process your refund please provide an active bank account, mine is BH74BMAG05753202185879 for reference.",IBAN,English,western
+B020,You can deposit the funds directly to iq80nbob647601793960143 through the online banking portal.,IBAN,English,western
+B021,الرجاء تحويل مبلغ الإيجار إلى حسابي البنكي على الآيبان JO73 RAFB 7171 1919 0418 7340 3305 45 قبل نهاية الأسبوع.,IBAN,Arabic,western
+B022,عشان أقدر أحول لك الراتب أحتاج رقم الآيبان حقك، أنا رقمي KW42NBOB9069301054408514427636 كمعلومة.,IBAN,Arabic,western
+B023,رقم الحساب المصرفي الدولي الخاص بالشركة هو sa7040091351893243987399 للحوالات الخارجية.,IBAN,Arabic,western
+B024,لو سمحت ابعتلي الفلوس على AE96 7765 6122 4493 6703 156 أول ما تقدر تخلص المعاملة.,IBAN,Arabic,western
+B025,تم تحديث بيانات الدفع الخاصة بي ورقم الآيبان الجديد هو EG090603796855166502862171081 لاعتماده.,IBAN,Arabic,western
+B026,"Please transfer the money to my account, الآيبان تبعي هو bh83arab89138284882792.",IBAN,Code-mixed Arabic-English,western
+B027,You need to update your payment details in the system وحط الـ IBAN اللي هو IQ69 BBME 8934 5508 7566 578.,IBAN,Code-mixed Arabic-English,western
+B028,The client asked for our bank details so I sent them JO16CIBE9012240080569926605497 عشان يحولون الدفعة.,IBAN,Code-mixed Arabic-English,western
+B029,My international bank account number is kw14nbok8532252727516040900268 تأكد منه قبل لا تسوي التحويل.,IBAN,Code-mixed Arabic-English,western
+B030,Send the invoice attached with the IBAN SA13 0476 7041 7948 3597 0493 عشان يقدرون يدفعون.,IBAN,Code-mixed Arabic-English,western
+B031,You can send the requested documents to my professional email address at omar.layla10@uotechnology.edu.iq.,EMAIL,English,western
+B032,"I have not received the newsletter yet, could you check if noor.hassan17@yahoo.com is still on the mailing list?",EMAIL,English,western
+B033,For business inquiries feel free to drop a message to layla.omar6@uotechnology.edu.iq and our team will get back to you.,EMAIL,English,western
+B034,My personal email is hassan.fatima19@uotechnology.edu.iq in case you prefer writing rather than calling.,EMAIL,English,western
+B035,Please forward the meeting invitation to fatima.yousef85@company.com so I can add it to my calendar.,EMAIL,English,western
+B036,تقدر ترسل الملفات المطلوبة على إيميلي الشخصي fatima.mariam10@outlook.com في أقرب فرصة.,EMAIL,Arabic,western
+B037,للاستفسارات التجارية يرجى التواصل معنا عبر البريد الإلكتروني layla.hassan56@yahoo.com وسنقوم بالرد عليكم.,EMAIL,Arabic,western
+B038,أنا ما وصلني التقرير، تأكد إنك أرسلته على layla.fatima67@company.com عشان أشوفه.,EMAIL,Arabic,western
+B039,ابعتلي العقد على ahmed.ahmed69@uotechnology.edu.iq عشان أراجعه قبل ما أمضي عليه.,EMAIL,Arabic,western
+B040,تم إنشاء حساب جديد لك باستخدام بريدك الإلكتروني ahmed.yousef38@company.com بنجاح.,EMAIL,Arabic,western
+B041,Please send the files to fatima.yousef48@gmail.com عشان أشيك عليهم قبل الاجتماع.,EMAIL,Code-mixed Arabic-English,western
+B042,I will forward the meeting link to your email اللي هو omar.noor75@yahoo.com.,EMAIL,Code-mixed Arabic-English,western
+B043,"If you have any issues with the platform, just email support at yousef.ahmed94@yahoo.com وهم بيساعدونك.",EMAIL,Code-mixed Arabic-English,western
+B044,My personal email is noor.ahmed73@company.com تقدر ترسلي عليه the final draft.,EMAIL,Code-mixed Arabic-English,western
+B045,Don't forget to CC yousef.fatima81@company.com لما ترسل الموافقة للإدارة.,EMAIL,Code-mixed Arabic-English,western
+B046,"Please provide your national identity number, for example ۲۶۳۷۹۸۱۹۰۷, to proceed with the registration.",NATIONAL_ID,English,ext_arabic_indic
+B047,The government portal requires my civil ID number which is 1982037506 for accessing the services.,NATIONAL_ID,English,western
+B048,I forgot my wallet but my resident Iqama number is 1508771073 if you can look me up in the system.,NATIONAL_ID,English,western
+B049,Your residency permit is linked to your ID number 2879095254 in the central database.,NATIONAL_ID,English,western
+B050,"To renew your driver's license, you must enter your national identification number 1417527022 on the form.",NATIONAL_ID,English,western
+B051,لإكمال عملية التسجيل يرجى إدخال رقم الهوية الوطنية ۲۱۵۴۳۴۴۳۱۳ في الخانة المخصصة.,NATIONAL_ID,Arabic,ext_arabic_indic
+B052,رقم الإقامة الخاص بي هو 1536180187 وأرغب في تجديدها قبل الانتهاء.,NATIONAL_ID,Arabic,western
+B053,عشان أطلع لك الشريحة أحتاج رقم بطاقتك المدنية اللي هو 1428620060 مثلاً.,NATIONAL_ID,Arabic,western
+B054,الرقم القومي بتاعي هو 1639407227 لو محتاجه عشان المعاملة تخلص.,NATIONAL_ID,Arabic,western
+B055,يجب تقديم رقم الهوية المدنية 2467205586 كجزء من المستندات المطلوبة للتوظيف.,NATIONAL_ID,Arabic,western
+B056,You must enter your civil ID ١٠٠٢٤٧٠٥٩٨ عشان تقدر تسجل في الموقع.,NATIONAL_ID,Code-mixed Arabic-English,arabic_indic
+B057,My Iqama number is 2307934179 بليز شيك إذا هي صالحة أو لا.,NATIONAL_ID,Code-mixed Arabic-English,western
+B058,The system requires your national ID number 2988334161 for verification purposes.,NATIONAL_ID,Code-mixed Arabic-English,western
+B059,Please prepare a copy of your resident ID 2505104030 قبل ما تروح الموعد.,NATIONAL_ID,Code-mixed Arabic-English,western
+B060,I need to update my profile with my new national ID 2149527893 عشان ما يوقفون الحساب.,NATIONAL_ID,Code-mixed Arabic-English,western
+B061,The flight booking reference is 578108 which you will need at the check-in desk.,NEGATIVE,English,western
+B062,Please return the identity documents to room 608152781 before leaving the building.,NEGATIVE,English,western
+B063,The serial number of the new card reader is 8840 and it needs to be registered.,NEGATIVE,English,western
+B064,The shipment tracking code 241 indicates that your package is out for delivery.,NEGATIVE,English,western
+B065,The software activation key for the identity verification system is 5528179764.,NEGATIVE,English,western
+B066,The transaction receipt number is 7656470191 which you should keep for your records.,NEGATIVE,English,western
+B067,The reference code for renewing your resident permit is 493 on the official portal.,NEGATIVE,English,western
+B068,The concert ticket barcode number is 955025487 and it includes a backstage pass.,NEGATIVE,English,western
+B069,The customs declaration number is 540 for the imported goods.,NEGATIVE,English,western
+B070,The university application ID is 874 according to the admission system.,NEGATIVE,English,western
+B071,رقم تذكرة الطيران هو 6513271986 يرجى الاحتفاظ به عند بوابة الصعود.,NEGATIVE,Arabic,western
+B072,تم استلام الشحنة وتتبعها متاح عبر الكود 767 في الموقع.,NEGATIVE,Arabic,western
+B073,الرقم التسلسلي لجهاز قارئ البطاقات هو 7838549596 ويجب إدخاله في النظام لاستكمال عملية تحديث وثائق الهوية.,NEGATIVE,Arabic,western
+B074,رقم الإيصال الخاص بالمعاملة هو 7502 يرجى الاحتفاظ به.,NEGATIVE,Arabic,western
+B075,الكود المرجعي للطلب هو 252497550 وستصلك رسالة قريباً.,NEGATIVE,Arabic,western
+B076,رقم بوليصة الشحن هو 6882608568 وسيقوم المندوب بالتواصل معك.,NEGATIVE,Arabic,western
+B077,تجد الشروط والأحكام الخاصة بالبطاقة المدنية في الصفحة 410737774 من الكتيب.,NEGATIVE,Arabic,western
+B078,رقم الجمارك الخاص بالشحنة هو 325561 ويحتاج إلى تخليص.,NEGATIVE,Arabic,western
+B079,رقم المعاملة لدفع رسوم الهوية الوطنية الجديدة هو 681164851 في البنك.,NEGATIVE,Arabic,western
+B080,رقم التسجيل في الجامعة هو 237894 للعام الدراسي الجديد.,NEGATIVE,Arabic,western
+B081,The transaction reference number for the new identity documents is 629933 وتقدر تطبع الوصل.,NEGATIVE,Code-mixed Arabic-English,western
+B082,Your shipment tracking number is 053753477 بليز خليه معاك عشان تستلم الطلب.,NEGATIVE,Code-mixed Arabic-English,western
+B083,The tracking code is 319 وتقدر تشيك عليه في الويب سايت.,NEGATIVE,Code-mixed Arabic-English,western
+B084,The card reader gave an error code 5108813523 فما قدرت أدفع.,NEGATIVE,Code-mixed Arabic-English,western
+B085,Flight 627442 is delayed بسبب سوء الأحوال الجوية.,NEGATIVE,Code-mixed Arabic-English,western
+B086,The system serial number is 303359215 ولازم نحطه في الداتا بيس.,NEGATIVE,Code-mixed Arabic-English,western
+B087,The invoice number is 0576 بليز سددها في أسرع وقت.,NEGATIVE,Code-mixed Arabic-English,western
+B088,The reference code 0195 explains how to track your residency details in the app.,NEGATIVE,Code-mixed Arabic-English,western
+B089,The batch processing number is 430556294 for civil ID renewals في السيستم.,NEGATIVE,Code-mixed Arabic-English,western
+B090,My raffle ticket barcode is 573529563 وأتمنى أفوز بالسحب اليوم.,NEGATIVE,Code-mixed Arabic-English,western

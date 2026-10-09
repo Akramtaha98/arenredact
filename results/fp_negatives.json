@@ -1,0 +1,122 @@
+{
+ "code_sha256": "5359202a2ba521d66ef95b3d8c2377777affeaf6ae926347b3f23dd427b3833d",
+ "eval_sha256": "549c6fc37668486cc9a469eda5e0e7533ef89ce9db3c8095aaf49a29974d00a8",
+ "sets": {
+  "S3": {
+   "n_negative_sentences": 110,
+   "systems": {
+    "ours_full": {
+     "sentences_with_false_positive": 5,
+     "false_positive_spans": 5
+    },
+    "ours_no_stage1": {
+     "sentences_with_false_positive": 5,
+     "false_positive_spans": 5
+    },
+    "presidio_default": {
+     "sentences_with_false_positive": 39,
+     "false_positive_spans": 39
+    },
+    "presidio_norm": {
+     "sentences_with_false_positive": 39,
+     "false_positive_spans": 39
+    },
+    "presidio_norm_regional": {
+     "sentences_with_false_positive": 15,
+     "false_positive_spans": 15
+    },
+    "scrubadub": {
+     "sentences_with_false_positive": 16,
+     "false_positive_spans": 16
+    }
+   }
+  },
+  "S4": {
+   "n_negative_sentences": 100,
+   "systems": {
+    "ours_full": {
+     "sentences_with_false_positive": 0,
+     "false_positive_spans": 0
+    },
+    "ours_no_stage1": {
+     "sentences_with_false_positive": 0,
+     "false_positive_spans": 0
+    },
+    "presidio_default": {
+     "sentences_with_false_positive": 24,
+     "false_positive_spans": 24
+    },
+    "presidio_norm": {
+     "sentences_with_false_positive": 24,
+     "false_positive_spans": 24
+    },
+    "presidio_norm_regional": {
+     "sentences_with_false_positive": 7,
+     "false_positive_spans": 7
+    },
+    "scrubadub": {
+     "sentences_with_false_positive": 9,
+     "false_positive_spans": 9
+    }
+   }
+  },
+  "independent_corrected": {
+   "n_negative_sentences": 204,
+   "systems": {
+    "ours_full": {
+     "sentences_with_false_positive": 8,
+     "false_positive_spans": 8
+    },
+    "ours_no_stage1": {
+     "sentences_with_false_positive": 8,
+     "false_positive_spans": 8
+    },
+    "presidio_default": {
+     "sentences_with_false_positive": 31,
+     "false_positive_spans": 32
+    },
+    "presidio_norm": {
+     "sentences_with_false_positive": 31,
+     "false_positive_spans": 32
+    },
+    "presidio_norm_regional": {
+     "sentences_with_false_positive": 15,
+     "false_positive_spans": 16
+    },
+    "scrubadub": {
+     "sentences_with_false_positive": 13,
+     "false_positive_spans": 13
+    }
+   }
+  },
+  "S5": {
+   "n_negative_sentences": 60,
+   "systems": {
+    "ours_full": {
+     "sentences_with_false_positive": 1,
+     "false_positive_spans": 1
+    },
+    "ours_no_stage1": {
+     "sentences_with_false_positive": 1,
+     "false_positive_spans": 1
+    },
+    "presidio_default": {
+     "sentences_with_false_positive": 10,
+     "false_positive_spans": 10
+    },
+    "presidio_norm": {
+     "sentences_with_false_positive": 10,
+     "false_positive_spans": 10
+    },
+    "presidio_norm_regional": {
+     "sentences_with_false_positive": 2,
+     "false_positive_spans": 2
+    },
+    "scrubadub": {
+     "sentences_with_false_positive": 3,
+     "false_positive_spans": 3
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,121 @@
+item_id,"system(A=ours,B=Presidio+S1+reg)",attack,type,scorer_partial_k6,scorer_full
+L001,A,SEP (dev separators),IBAN,1,1
+L002,B,SEP (dev separators),IBAN,1,1
+L003,A,BIDI controls,NATIONAL_ID,0,0
+L004,A,INV (dev chars),IBAN,0,0
+L005,B,SEP (dev separators),IBAN,1,1
+L006,B,SEP (dev separators),EMAIL,1,1
+L007,B,SEP (held-out separators),PHONE,1,1
+L008,B,BIDI controls,PHONE,0,0
+L009,B,SEP (dev separators),EMAIL,1,1
+L010,A,Arabic-Indic digits,EMAIL,0,0
+L011,A,HGL 100%,IBAN,0,0
+L012,A,SEP (held-out separators),NATIONAL_ID,1,1
+L013,A,COMBO-2,IBAN,1,1
+L014,A,HGL 100%,PHONE,0,0
+L015,B,INV (dev chars),IBAN,0,0
+L016,A,HGL 100%,NATIONAL_ID,0,0
+L017,B,SEP (held-out separators),PHONE,1,1
+L018,B,CONF (folded set),IBAN,0,0
+L019,B,SEP (held-out separators),PHONE,1,1
+L020,B,SEP (dev separators),PHONE,0,0
+L021,B,SEP (held-out separators),IBAN,1,1
+L022,B,SEP (dev separators),IBAN,1,1
+L023,B,Arabic-Indic digits,PHONE,0,0
+L024,A,BIDI controls,PHONE,0,0
+L025,B,BIDI controls,PHONE,0,0
+L026,A,COMBO-2,PHONE,0,0
+L027,B,COMBO-2,IBAN,0,0
+L028,B,CONF (held-out set),EMAIL,1,1
+L029,B,INV (dev chars),EMAIL,0,0
+L030,A,BIDI controls,IBAN,0,0
+L031,B,SEP (held-out separators),NATIONAL_ID,1,1
+L032,A,BIDI controls,EMAIL,0,0
+L033,A,SEP (dev separators),EMAIL,1,1
+L034,B,INV (dev chars),NATIONAL_ID,0,0
+L035,A,COMBO-2,EMAIL,1,0
+L036,B,SEP (held-out separators),IBAN,1,1
+L037,A,COMBO-2,EMAIL,1,0
+L038,B,SEP (held-out separators),PHONE,1,1
+L039,A,CONF (held-out set),IBAN,1,1
+L040,B,SEP (dev separators),NATIONAL_ID,1,1
+L041,A,SEP (held-out separators),EMAIL,1,1
+L042,B,CONF (folded set),IBAN,0,0
+L043,B,SEP (dev separators),NATIONAL_ID,1,1
+L044,A,SEP (dev separators),IBAN,1,1
+L045,A,SEP (dev separators),IBAN,1,1
+L046,A,CONF (folded set),IBAN,0,0
+L047,B,CONF (held-out set),IBAN,1,1
+L048,B,HGL 100%,PHONE,0,0
+L049,A,BIDI controls,EMAIL,0,0
+L050,A,Arabic-Indic digits,NATIONAL_ID,0,0
+L051,A,HGL 100%,EMAIL,0,0
+L052,B,SEP (held-out separators),EMAIL,1,1
+L053,A,Fullwidth/math forms,PHONE,0,0
+L054,B,HGL 100%,PHONE,0,0
+L055,A,SEP (dev separators),PHONE,1,1
+L056,B,COMBO-2,NATIONAL_ID,1,1
+L057,A,SEP (held-out separators),IBAN,1,1
+L058,A,Arabic-Indic digits,PHONE,0,0
+L059,B,SEP (held-out separators),NATIONAL_ID,1,1
+L060,A,SEP (held-out separators),EMAIL,1,1
+L061,B,CONF (held-out set),EMAIL,1,1
+L062,A,HGL 100%,EMAIL,0,0
+L063,B,Fullwidth/math forms,NATIONAL_ID,0,0
+L064,A,Arabic-Indic digits,IBAN,0,0
+L065,A,SEP (dev separators),PHONE,1,1
+L066,A,SEP (dev separators),IBAN,1,1
+L067,A,Fullwidth/math forms,NATIONAL_ID,0,0
+L068,B,COMBO-2,IBAN,1,1
+L069,B,INV (dev chars),PHONE,0,0
+L070,B,SEP (dev separators),IBAN,1,1
+L071,A,Arabic-Indic digits,NATIONAL_ID,0,0
+L072,B,Fullwidth/math forms,NATIONAL_ID,0,0
+L073,B,HGL 100%,PHONE,0,0
+L074,A,SEP (held-out separators),PHONE,1,1
+L075,B,CONF (held-out set),EMAIL,1,1
+L076,B,Fullwidth/math forms,PHONE,0,0
+L077,A,Fullwidth/math forms,EMAIL,0,0
+L078,A,SEP (held-out separators),PHONE,1,1
+L079,B,Arabic-Indic digits,IBAN,0,0
+L080,A,SEP (held-out separators),IBAN,1,1
+L081,B,COMBO-2,EMAIL,1,1
+L082,A,SEP (dev separators),NATIONAL_ID,1,1
+L083,B,Arabic-Indic digits,NATIONAL_ID,0,0
+L084,B,COMBO-2,EMAIL,1,1
+L085,A,SEP (held-out separators),PHONE,1,1
+L086,B,Fullwidth/math forms,IBAN,0,0
+L087,A,HGL 100%,EMAIL,0,0
+L088,A,SEP (dev separators),EMAIL,1,0
+L089,A,SEP (dev separators),EMAIL,1,1
+L090,B,CONF (folded set),EMAIL,0,0
+L091,B,SEP (dev separators),NATIONAL_ID,0,0
+L092,B,INV (dev chars),EMAIL,0,0
+L093,A,COMBO-2,IBAN,1,1
+L094,A,CONF (folded set),IBAN,0,0
+L095,A,SEP (dev separators),IBAN,1,1
+L096,A,HGL 100%,IBAN,0,0
+L097,A,INV (dev chars),PHONE,0,0
+L098,B,BIDI controls,IBAN,0,0
+L099,B,SEP (held-out separators),PHONE,1,1
+L100,B,BIDI controls,NATIONAL_ID,0,0
+L101,A,INV (dev chars),NATIONAL_ID,0,0
+L102,A,Fullwidth/math forms,EMAIL,0,0
+L103,B,HGL 100%,EMAIL,0,0
+L104,B,CONF (held-out set),IBAN,1,1
+L105,A,Fullwidth/math forms,EMAIL,0,0
+L106,A,COMBO-2,IBAN,1,1
+L107,B,CONF (held-out set),EMAIL,0,0
+L108,A,BIDI controls,NATIONAL_ID,0,0
+L109,B,INV (dev chars),IBAN,0,0
+L110,B,COMBO-2,NATIONAL_ID,1,1
+L111,B,SEP (held-out separators),IBAN,1,1
+L112,A,HGL 100%,NATIONAL_ID,0,0
+L113,B,Arabic-Indic digits,EMAIL,0,0
+L114,A,CONF (held-out set),IBAN,1,1
+L115,B,SEP (dev separators),EMAIL,1,1
+L116,A,SEP (dev separators),IBAN,1,1
+L117,B,INV (dev chars),EMAIL,0,0
+L118,A,COMBO-2,NATIONAL_ID,1,1
+L119,A,COMBO-2,EMAIL,1,1
+L120,A,SEP (held-out separators),NATIONAL_ID,1,1

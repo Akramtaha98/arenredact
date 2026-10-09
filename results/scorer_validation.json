@@ -1,0 +1,143 @@
+{
+ "k6": {
+  "fully_redacted_plain": {
+   "n": 160,
+   "v1_correct": 120,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 40,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "fully_redacted_shared": {
+   "n": 40,
+   "v1_correct": 0,
+   "v2a_correct": 40,
+   "v2_correct": 40,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 40,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "repeated_context": {
+   "n": 160,
+   "v1_correct": 120,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 40,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "partial_prefix": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "partial_suffix": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "partial_lookalike": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "second_copy_unredacted": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "repeat_second_survives": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 0,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 160,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "repeat_first_survives": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 0,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 160,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "repeat_both_redacted": {
+   "n": 160,
+   "v1_correct": 160,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 0,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  },
+  "short_fragment": {
+   "n": 160,
+   "v1_correct": 120,
+   "v2a_correct": 160,
+   "v2_correct": 160,
+   "v2a_fp": 0,
+   "v2a_fn": 0,
+   "v1_fp": 40,
+   "v1_fn": 0,
+   "v2_fp": 0,
+   "v2_fn": 0
+  }
+ },
+ "review_example": {
+  "identifier": "user123@example.com",
+  "output": "Contact [EMAIL]. Example company.",
+  "v1": true,
+  "v2": false
+ },
+ "note": "Ground truth follows from construction (author-built), not from independent human judgement."
+}
